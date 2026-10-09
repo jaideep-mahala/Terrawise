@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import Post from '@/types/post-type';
 import formatPostTime from '@/utils/format-post-time';
 import CategoryPill from '@/components/category-pill';
+import PostImage from '@/components/post-image';
 import { createSlug } from '@/utils/slug-generator';
 import { TestProps } from '@/types/test-props';
 
@@ -18,7 +19,7 @@ export default function PostCard({ post, testId = 'postcard' }: { post: Post } &
         onClick={() => navigate(`/details-page/${slug}/${post._id}`, { state: { post } })}
       >
         <div className="h-48 w-full overflow-hidden">
-          <img
+          <PostImage
             src={post.imageLink}
             alt={post.title}
             className={`sm:group-hover:scale-hover h-full w-full rounded-t-lg object-cover transition-transform ease-in-out`}

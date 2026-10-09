@@ -1,5 +1,5 @@
 import HomePage from '@/pages/home-page';
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { BrowserRouter } from 'react-router-dom';
 
@@ -79,8 +79,11 @@ describe('Integration Test: Home Route', () => {
     expect(natureCategoryPill).toBeInTheDocument();
     await userEvent.click(natureCategoryPill);
     expect(await screen.findByText('Posts related to "Nature"')).toBeInTheDocument();
-    // Strange test got passed api response is 3 over local backend
-    expect(await screen.findAllByTestId('featuredPostCard')).toHaveLength(5);
+    // Seed data (backend/data/sample_posts.json) contains exactly 3 posts
+    // tagged with the "Nature" category, so filtering must settle on 3 cards.
+    await waitFor(() => {
+      expect(screen.getAllByTestId('featuredPostCard')).toHaveLength(3);
+    });
   });
   test('Home Route: Verify navigation on post card click under Featured Posts section', async () => {
     //ARRANGE

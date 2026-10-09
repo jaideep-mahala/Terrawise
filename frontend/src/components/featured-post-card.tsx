@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import Post from '@/types/post-type';
 import formatPostTime from '@/utils/format-post-time';
 import CategoryPill from '@/components/category-pill';
+import PostImage from '@/components/post-image';
 import { createSlug } from '@/utils/slug-generator';
 import { TestProps } from '@/types/test-props';
 
@@ -18,7 +19,7 @@ export default function FeaturedPostCard({
       data-testid={testId}
     >
       <div className="w-full overflow-hidden sm:w-1/3">
-        <img
+        <PostImage
           src={post.imageLink}
           alt={post.title}
           className={`sm:group-hover:scale-hover h-48 w-full rounded-lg object-cover shadow-lg transition-transform ease-in-out sm:h-full`}
