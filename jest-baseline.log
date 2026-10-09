@@ -1,0 +1,2079 @@
+PASS src/__tests__/App.test.tsx
+  ● Console
+
+    console.error
+      Error: Not implemented: window.scrollTo
+          at module.exports (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/browser/not-implemented.js:9:17)
+          at /home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/browser/Window.js:870:7
+          at /home/devops/mega-devops-project/frontend/src/components/scroll-to-top.tsx:8:12
+          at commitHookEffectListMount (/home/devops/mega-devops-project/frontend/node_modules/react-dom/cjs/react-dom.development.js:23150:26)
+          at commitPassiveMountOnFiber (/home/devops/mega-devops-project/frontend/node_modules/react-dom/cjs/react-dom.development.js:24931:11)
+          at commitPassiveMountEffects_complete (/home/devops/mega-devops-project/frontend/node_modules/react-dom/cjs/react-dom.development.js:24891:9)
+          at commitPassiveMountEffects_begin (/home/devops/mega-devops-project/frontend/node_modules/react-dom/cjs/react-dom.development.js:24878:7)
+          at commitPassiveMountEffects (/home/devops/mega-devops-project/frontend/node_modules/react-dom/cjs/react-dom.development.js:24866:3)
+          at flushPassiveEffectsImpl (/home/devops/mega-devops-project/frontend/node_modules/react-dom/cjs/react-dom.development.js:27039:3)
+          at flushPassiveEffects (/home/devops/mega-devops-project/frontend/node_modules/react-dom/cjs/react-dom.development.js:26984:14)
+          at /home/devops/mega-devops-project/frontend/node_modules/react-dom/cjs/react-dom.development.js:26769:9
+          at flushActQueue (/home/devops/mega-devops-project/frontend/node_modules/react/cjs/react.development.js:2667:24)
+          at act (/home/devops/mega-devops-project/frontend/node_modules/react/cjs/react.development.js:2582:11)
+          at /home/devops/mega-devops-project/frontend/node_modules/@testing-library/react/dist/act-compat.js:46:25
+          at renderRoot (/home/devops/mega-devops-project/frontend/node_modules/@testing-library/react/dist/pure.js:161:26)
+          at render (/home/devops/mega-devops-project/frontend/node_modules/@testing-library/react/dist/pure.js:247:10)
+          at Object.<anonymous> (/home/devops/mega-devops-project/frontend/src/__tests__/App.test.tsx:6:11)
+          at Promise.then.completed (/home/devops/mega-devops-project/frontend/node_modules/jest-circus/build/utils.js:298:28)
+          at new Promise (<anonymous>)
+          at callAsyncCircusFn (/home/devops/mega-devops-project/frontend/node_modules/jest-circus/build/utils.js:231:10)
+          at _callCircusTest (/home/devops/mega-devops-project/frontend/node_modules/jest-circus/build/run.js:316:40)
+          at processTicksAndRejections (node:internal/process/task_queues:104:5)
+          at _runTest (/home/devops/mega-devops-project/frontend/node_modules/jest-circus/build/run.js:252:3)
+          at _runTestsForDescribeBlock (/home/devops/mega-devops-project/frontend/node_modules/jest-circus/build/run.js:126:9)
+          at _runTestsForDescribeBlock (/home/devops/mega-devops-project/frontend/node_modules/jest-circus/build/run.js:121:9)
+          at run (/home/devops/mega-devops-project/frontend/node_modules/jest-circus/build/run.js:71:3)
+          at runAndTransformResultsToJestFormat (/home/devops/mega-devops-project/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+          at jestAdapter (/home/devops/mega-devops-project/frontend/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+          at runTestInternal (/home/devops/mega-devops-project/frontend/node_modules/jest-runner/build/runTest.js:367:16)
+          at runTest (/home/devops/mega-devops-project/frontend/node_modules/jest-runner/build/runTest.js:444:34)
+          at Object.worker (/home/devops/mega-devops-project/frontend/node_modules/jest-runner/build/testWorker.js:106:12) {
+        type: 'not implemented'
+      }
+
+       6 |
+       7 |   useEffect(() => {
+    >  8 |     window.scrollTo(0, 0);
+         |            ^
+       9 |   }, [pathname]);
+      10 |
+      11 |   return null;
+
+      at VirtualConsole.<anonymous> (../node_modules/jest-environment-jsdom/build/index.js:63:23)
+      at module.exports (../node_modules/jsdom/lib/jsdom/browser/not-implemented.js:12:26)
+      at ../node_modules/jsdom/lib/jsdom/browser/Window.js:870:7
+      at components/scroll-to-top.tsx:8:12
+      at commitHookEffectListMount (../node_modules/react-dom/cjs/react-dom.development.js:23150:26)
+      at commitPassiveMountOnFiber (../node_modules/react-dom/cjs/react-dom.development.js:24931:11)
+      at commitPassiveMountEffects_complete (../node_modules/react-dom/cjs/react-dom.development.js:24891:9)
+      at commitPassiveMountEffects_begin (../node_modules/react-dom/cjs/react-dom.development.js:24878:7)
+      at commitPassiveMountEffects (../node_modules/react-dom/cjs/react-dom.development.js:24866:3)
+      at flushPassiveEffectsImpl (../node_modules/react-dom/cjs/react-dom.development.js:27039:3)
+      at flushPassiveEffects (../node_modules/react-dom/cjs/react-dom.development.js:26984:14)
+      at ../node_modules/react-dom/cjs/react-dom.development.js:26769:9
+      at flushActQueue (../node_modules/react/cjs/react.development.js:2667:24)
+      at act (../node_modules/react/cjs/react.development.js:2582:11)
+      at ../node_modules/@testing-library/react/dist/act-compat.js:46:25
+      at renderRoot (../node_modules/@testing-library/react/dist/pure.js:161:26)
+      at render (../node_modules/@testing-library/react/dist/pure.js:247:10)
+      at Object.<anonymous> (__tests__/App.test.tsx:6:11)
+
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "AxiosError {
+      message: 'Network Error',
+      name: 'AxiosError',
+      code: 'ERR_NETWORK',
+      config: {
+        transitional: {
+          silentJSONParsing: true,
+          forcedJSONParsing: true,
+          clarifyTimeoutError: false
+        },
+        adapter: [ 'xhr', 'http' ],
+        transformRequest: [ [Function: transformRequest] ],
+        transformResponse: [ [Function: transformResponse] ],
+        timeout: 0,
+        xsrfCookieName: 'XSRF-TOKEN',
+        xsrfHeaderName: 'X-XSRF-TOKEN',
+        maxContentLength: -1,
+        maxBodyLength: -1,
+        env: { FormData: [class FormData], Blob: [class Blob] },
+        validateStatus: [Function: validateStatus],
+        headers: Object [AxiosHeaders] {
+          Accept: 'application/json, text/plain, */*',
+          'Content-Type': null
+        },
+        method: 'get',
+        url: 'http://localhost:3001/api/posts/latest',
+        data: undefined
+      },
+      request: XMLHttpRequest {}
+    }".
+
+      40 |       .catch((error) => {
+      41 |         console.error(error);
+    > 42 |       });
+         |          ^
+      43 |   }, []);
+      44 |
+      45 |   return (
+
+      at console.error (../node_modules/@jest/console/build/BufferedConsole.js:127:10)
+      at components/blog-feed.tsx:42:21
+
+FAIL src/__tests__/integration/home.test.tsx (7.117 s)
+  ● Console
+
+    console.error
+      Error: Error: connect ECONNREFUSED 127.0.0.1:3001
+          at Object.dispatchError (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:63:19)
+          at Request.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+          at Request.emit (node:events:521:24)
+          at ClientRequest.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+          at ClientRequest.emit (node:events:509:28)
+          at emitErrorEvent (node:_http_client:109:11)
+          at Socket.socketErrorListener (node:_http_client:593:5)
+          at Socket.emit (node:events:509:28)
+          at emitErrorNT (node:internal/streams/destroy:170:8)
+          at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+          at processTicksAndRejections (node:internal/process/task_queues:90:21) {
+        type: 'XMLHttpRequest'
+      }
+
+      at VirtualConsole.<anonymous> (../node_modules/jest-environment-jsdom/build/index.js:63:23)
+      at Object.dispatchError (../node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:66:53)
+      at Request.<anonymous> (../node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+      at ClientRequest.<anonymous> (../node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+
+    console.error
+      AxiosError {
+        message: 'Network Error',
+        name: 'AxiosError',
+        code: 'ERR_NETWORK',
+        config: {
+          transitional: {
+            silentJSONParsing: true,
+            forcedJSONParsing: true,
+            clarifyTimeoutError: false
+          },
+          adapter: [ 'xhr', 'http' ],
+          transformRequest: [ [Function: transformRequest] ],
+          transformResponse: [ [Function: transformResponse] ],
+          timeout: 0,
+          xsrfCookieName: 'XSRF-TOKEN',
+          xsrfHeaderName: 'X-XSRF-TOKEN',
+          maxContentLength: -1,
+          maxBodyLength: -1,
+          env: { FormData: [class FormData], Blob: [class Blob] },
+          validateStatus: [Function: validateStatus],
+          headers: Object [AxiosHeaders] {
+            Accept: 'application/json, text/plain, */*',
+            'Content-Type': null
+          },
+          method: 'get',
+          url: 'http://localhost:3001/api/posts/featured',
+          data: undefined
+        },
+        request: XMLHttpRequest {}
+      }
+
+      28 |       })
+      29 |       .catch((error) => {
+    > 30 |         console.error(error);
+         |                 ^
+      31 |       });
+      32 |   }, [selectedCategory]);
+      33 |
+
+      at components/blog-feed.tsx:30:17
+
+    console.error
+      Error: Error: connect ECONNREFUSED 127.0.0.1:3001
+          at Object.dispatchError (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:63:19)
+          at Request.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+          at Request.emit (node:events:521:24)
+          at ClientRequest.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+          at ClientRequest.emit (node:events:509:28)
+          at emitErrorEvent (node:_http_client:109:11)
+          at Socket.socketErrorListener (node:_http_client:593:5)
+          at Socket.emit (node:events:509:28)
+          at emitErrorNT (node:internal/streams/destroy:170:8)
+          at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+          at processTicksAndRejections (node:internal/process/task_queues:90:21) {
+        type: 'XMLHttpRequest'
+      }
+
+      at VirtualConsole.<anonymous> (../node_modules/jest-environment-jsdom/build/index.js:63:23)
+      at Object.dispatchError (../node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:66:53)
+      at Request.<anonymous> (../node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+      at ClientRequest.<anonymous> (../node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+
+    console.error
+      AxiosError {
+        message: 'Network Error',
+        name: 'AxiosError',
+        code: 'ERR_NETWORK',
+        config: {
+          transitional: {
+            silentJSONParsing: true,
+            forcedJSONParsing: true,
+            clarifyTimeoutError: false
+          },
+          adapter: [ 'xhr', 'http' ],
+          transformRequest: [ [Function: transformRequest] ],
+          transformResponse: [ [Function: transformResponse] ],
+          timeout: 0,
+          xsrfCookieName: 'XSRF-TOKEN',
+          xsrfHeaderName: 'X-XSRF-TOKEN',
+          maxContentLength: -1,
+          maxBodyLength: -1,
+          env: { FormData: [class FormData], Blob: [class Blob] },
+          validateStatus: [Function: validateStatus],
+          headers: Object [AxiosHeaders] {
+            Accept: 'application/json, text/plain, */*',
+            'Content-Type': null
+          },
+          method: 'get',
+          url: 'http://localhost:3001/api/posts/latest',
+          data: undefined
+        },
+        request: XMLHttpRequest {}
+      }
+
+      39 |       })
+      40 |       .catch((error) => {
+    > 41 |         console.error(error);
+         |                 ^
+      42 |       });
+      43 |   }, []);
+      44 |
+
+      at components/blog-feed.tsx:41:17
+
+    console.error
+      Error: Error: connect ECONNREFUSED 127.0.0.1:3001
+          at Object.dispatchError (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:63:19)
+          at Request.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+          at Request.emit (node:events:521:24)
+          at ClientRequest.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+          at ClientRequest.emit (node:events:509:28)
+          at emitErrorEvent (node:_http_client:109:11)
+          at Socket.socketErrorListener (node:_http_client:593:5)
+          at Socket.emit (node:events:509:28)
+          at emitErrorNT (node:internal/streams/destroy:170:8)
+          at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+          at processTicksAndRejections (node:internal/process/task_queues:90:21) {
+        type: 'XMLHttpRequest'
+      }
+
+      at VirtualConsole.<anonymous> (../node_modules/jest-environment-jsdom/build/index.js:63:23)
+      at Object.dispatchError (../node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:66:53)
+      at Request.<anonymous> (../node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+      at ClientRequest.<anonymous> (../node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+
+    console.error
+      AxiosError {
+        message: 'Network Error',
+        name: 'AxiosError',
+        code: 'ERR_NETWORK',
+        config: {
+          transitional: {
+            silentJSONParsing: true,
+            forcedJSONParsing: true,
+            clarifyTimeoutError: false
+          },
+          adapter: [ 'xhr', 'http' ],
+          transformRequest: [ [Function: transformRequest] ],
+          transformResponse: [ [Function: transformResponse] ],
+          timeout: 0,
+          xsrfCookieName: 'XSRF-TOKEN',
+          xsrfHeaderName: 'X-XSRF-TOKEN',
+          maxContentLength: -1,
+          maxBodyLength: -1,
+          env: { FormData: [class FormData], Blob: [class Blob] },
+          validateStatus: [Function: validateStatus],
+          headers: Object [AxiosHeaders] {
+            Accept: 'application/json, text/plain, */*',
+            'Content-Type': null
+          },
+          method: 'get',
+          url: 'http://localhost:3001/api/posts',
+          data: undefined
+        },
+        request: XMLHttpRequest {}
+      }
+
+      16 |       })
+      17 |       .catch((error) => {
+    > 18 |         console.error(error);
+         |                 ^
+      19 |       });
+      20 |   }, []);
+      21 |
+
+      at pages/home-page.tsx:18:17
+
+    console.error
+      Error: Error: connect ECONNREFUSED 127.0.0.1:3001
+          at Object.dispatchError (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:63:19)
+          at Request.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+          at Request.emit (node:events:521:24)
+          at ClientRequest.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+          at ClientRequest.emit (node:events:509:28)
+          at emitErrorEvent (node:_http_client:109:11)
+          at Socket.socketErrorListener (node:_http_client:593:5)
+          at Socket.emit (node:events:509:28)
+          at emitErrorNT (node:internal/streams/destroy:170:8)
+          at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+          at processTicksAndRejections (node:internal/process/task_queues:90:21) {
+        type: 'XMLHttpRequest'
+      }
+
+      at VirtualConsole.<anonymous> (../node_modules/jest-environment-jsdom/build/index.js:63:23)
+      at Object.dispatchError (../node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:66:53)
+      at Request.<anonymous> (../node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+      at ClientRequest.<anonymous> (../node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+
+    console.error
+      AxiosError {
+        message: 'Network Error',
+        name: 'AxiosError',
+        code: 'ERR_NETWORK',
+        config: {
+          transitional: {
+            silentJSONParsing: true,
+            forcedJSONParsing: true,
+            clarifyTimeoutError: false
+          },
+          adapter: [ 'xhr', 'http' ],
+          transformRequest: [ [Function: transformRequest] ],
+          transformResponse: [ [Function: transformResponse] ],
+          timeout: 0,
+          xsrfCookieName: 'XSRF-TOKEN',
+          xsrfHeaderName: 'X-XSRF-TOKEN',
+          maxContentLength: -1,
+          maxBodyLength: -1,
+          env: { FormData: [class FormData], Blob: [class Blob] },
+          validateStatus: [Function: validateStatus],
+          headers: Object [AxiosHeaders] {
+            Accept: 'application/json, text/plain, */*',
+            'Content-Type': null
+          },
+          method: 'get',
+          url: 'http://localhost:3001/api/posts/featured',
+          data: undefined
+        },
+        request: XMLHttpRequest {}
+      }
+
+      28 |       })
+      29 |       .catch((error) => {
+    > 30 |         console.error(error);
+         |                 ^
+      31 |       });
+      32 |   }, [selectedCategory]);
+      33 |
+
+      at components/blog-feed.tsx:30:17
+
+    console.error
+      Error: Error: connect ECONNREFUSED 127.0.0.1:3001
+          at Object.dispatchError (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:63:19)
+          at Request.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+          at Request.emit (node:events:521:24)
+          at ClientRequest.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+          at ClientRequest.emit (node:events:509:28)
+          at emitErrorEvent (node:_http_client:109:11)
+          at Socket.socketErrorListener (node:_http_client:593:5)
+          at Socket.emit (node:events:509:28)
+          at emitErrorNT (node:internal/streams/destroy:170:8)
+          at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+          at processTicksAndRejections (node:internal/process/task_queues:90:21) {
+        type: 'XMLHttpRequest'
+      }
+
+      at VirtualConsole.<anonymous> (../node_modules/jest-environment-jsdom/build/index.js:63:23)
+      at Object.dispatchError (../node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:66:53)
+      at Request.<anonymous> (../node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+      at ClientRequest.<anonymous> (../node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+
+    console.error
+      AxiosError {
+        message: 'Network Error',
+        name: 'AxiosError',
+        code: 'ERR_NETWORK',
+        config: {
+          transitional: {
+            silentJSONParsing: true,
+            forcedJSONParsing: true,
+            clarifyTimeoutError: false
+          },
+          adapter: [ 'xhr', 'http' ],
+          transformRequest: [ [Function: transformRequest] ],
+          transformResponse: [ [Function: transformResponse] ],
+          timeout: 0,
+          xsrfCookieName: 'XSRF-TOKEN',
+          xsrfHeaderName: 'X-XSRF-TOKEN',
+          maxContentLength: -1,
+          maxBodyLength: -1,
+          env: { FormData: [class FormData], Blob: [class Blob] },
+          validateStatus: [Function: validateStatus],
+          headers: Object [AxiosHeaders] {
+            Accept: 'application/json, text/plain, */*',
+            'Content-Type': null
+          },
+          method: 'get',
+          url: 'http://localhost:3001/api/posts/latest',
+          data: undefined
+        },
+        request: XMLHttpRequest {}
+      }
+
+      39 |       })
+      40 |       .catch((error) => {
+    > 41 |         console.error(error);
+         |                 ^
+      42 |       });
+      43 |   }, []);
+      44 |
+
+      at components/blog-feed.tsx:41:17
+
+    console.error
+      Error: Error: connect ECONNREFUSED 127.0.0.1:3001
+          at Object.dispatchError (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:63:19)
+          at Request.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+          at Request.emit (node:events:521:24)
+          at ClientRequest.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+          at ClientRequest.emit (node:events:509:28)
+          at emitErrorEvent (node:_http_client:109:11)
+          at Socket.socketErrorListener (node:_http_client:593:5)
+          at Socket.emit (node:events:509:28)
+          at emitErrorNT (node:internal/streams/destroy:170:8)
+          at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+          at processTicksAndRejections (node:internal/process/task_queues:90:21) {
+        type: 'XMLHttpRequest'
+      }
+
+      at VirtualConsole.<anonymous> (../node_modules/jest-environment-jsdom/build/index.js:63:23)
+      at Object.dispatchError (../node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:66:53)
+      at Request.<anonymous> (../node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+      at ClientRequest.<anonymous> (../node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+
+    console.error
+      AxiosError {
+        message: 'Network Error',
+        name: 'AxiosError',
+        code: 'ERR_NETWORK',
+        config: {
+          transitional: {
+            silentJSONParsing: true,
+            forcedJSONParsing: true,
+            clarifyTimeoutError: false
+          },
+          adapter: [ 'xhr', 'http' ],
+          transformRequest: [ [Function: transformRequest] ],
+          transformResponse: [ [Function: transformResponse] ],
+          timeout: 0,
+          xsrfCookieName: 'XSRF-TOKEN',
+          xsrfHeaderName: 'X-XSRF-TOKEN',
+          maxContentLength: -1,
+          maxBodyLength: -1,
+          env: { FormData: [class FormData], Blob: [class Blob] },
+          validateStatus: [Function: validateStatus],
+          headers: Object [AxiosHeaders] {
+            Accept: 'application/json, text/plain, */*',
+            'Content-Type': null
+          },
+          method: 'get',
+          url: 'http://localhost:3001/api/posts',
+          data: undefined
+        },
+        request: XMLHttpRequest {}
+      }
+
+      16 |       })
+      17 |       .catch((error) => {
+    > 18 |         console.error(error);
+         |                 ^
+      19 |       });
+      20 |   }, []);
+      21 |
+
+      at pages/home-page.tsx:18:17
+
+    console.error
+      Error: Error: connect ECONNREFUSED 127.0.0.1:3001
+          at Object.dispatchError (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:63:19)
+          at Request.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+          at Request.emit (node:events:521:24)
+          at ClientRequest.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+          at ClientRequest.emit (node:events:509:28)
+          at emitErrorEvent (node:_http_client:109:11)
+          at Socket.socketErrorListener (node:_http_client:593:5)
+          at Socket.emit (node:events:509:28)
+          at emitErrorNT (node:internal/streams/destroy:170:8)
+          at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+          at processTicksAndRejections (node:internal/process/task_queues:90:21) {
+        type: 'XMLHttpRequest'
+      }
+
+      at VirtualConsole.<anonymous> (../node_modules/jest-environment-jsdom/build/index.js:63:23)
+      at Object.dispatchError (../node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:66:53)
+      at Request.<anonymous> (../node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+      at ClientRequest.<anonymous> (../node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+
+    console.error
+      AxiosError {
+        message: 'Network Error',
+        name: 'AxiosError',
+        code: 'ERR_NETWORK',
+        config: {
+          transitional: {
+            silentJSONParsing: true,
+            forcedJSONParsing: true,
+            clarifyTimeoutError: false
+          },
+          adapter: [ 'xhr', 'http' ],
+          transformRequest: [ [Function: transformRequest] ],
+          transformResponse: [ [Function: transformResponse] ],
+          timeout: 0,
+          xsrfCookieName: 'XSRF-TOKEN',
+          xsrfHeaderName: 'X-XSRF-TOKEN',
+          maxContentLength: -1,
+          maxBodyLength: -1,
+          env: { FormData: [class FormData], Blob: [class Blob] },
+          validateStatus: [Function: validateStatus],
+          headers: Object [AxiosHeaders] {
+            Accept: 'application/json, text/plain, */*',
+            'Content-Type': null
+          },
+          method: 'get',
+          url: 'http://localhost:3001/api/posts/featured',
+          data: undefined
+        },
+        request: XMLHttpRequest {}
+      }
+
+      28 |       })
+      29 |       .catch((error) => {
+    > 30 |         console.error(error);
+         |                 ^
+      31 |       });
+      32 |   }, [selectedCategory]);
+      33 |
+
+      at components/blog-feed.tsx:30:17
+
+    console.error
+      Error: Error: connect ECONNREFUSED 127.0.0.1:3001
+          at Object.dispatchError (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:63:19)
+          at Request.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+          at Request.emit (node:events:521:24)
+          at ClientRequest.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+          at ClientRequest.emit (node:events:509:28)
+          at emitErrorEvent (node:_http_client:109:11)
+          at Socket.socketErrorListener (node:_http_client:593:5)
+          at Socket.emit (node:events:509:28)
+          at emitErrorNT (node:internal/streams/destroy:170:8)
+          at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+          at processTicksAndRejections (node:internal/process/task_queues:90:21) {
+        type: 'XMLHttpRequest'
+      }
+
+      at VirtualConsole.<anonymous> (../node_modules/jest-environment-jsdom/build/index.js:63:23)
+      at Object.dispatchError (../node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:66:53)
+      at Request.<anonymous> (../node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+      at ClientRequest.<anonymous> (../node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+
+    console.error
+      AxiosError {
+        message: 'Network Error',
+        name: 'AxiosError',
+        code: 'ERR_NETWORK',
+        config: {
+          transitional: {
+            silentJSONParsing: true,
+            forcedJSONParsing: true,
+            clarifyTimeoutError: false
+          },
+          adapter: [ 'xhr', 'http' ],
+          transformRequest: [ [Function: transformRequest] ],
+          transformResponse: [ [Function: transformResponse] ],
+          timeout: 0,
+          xsrfCookieName: 'XSRF-TOKEN',
+          xsrfHeaderName: 'X-XSRF-TOKEN',
+          maxContentLength: -1,
+          maxBodyLength: -1,
+          env: { FormData: [class FormData], Blob: [class Blob] },
+          validateStatus: [Function: validateStatus],
+          headers: Object [AxiosHeaders] {
+            Accept: 'application/json, text/plain, */*',
+            'Content-Type': null
+          },
+          method: 'get',
+          url: 'http://localhost:3001/api/posts/latest',
+          data: undefined
+        },
+        request: XMLHttpRequest {}
+      }
+
+      39 |       })
+      40 |       .catch((error) => {
+    > 41 |         console.error(error);
+         |                 ^
+      42 |       });
+      43 |   }, []);
+      44 |
+
+      at components/blog-feed.tsx:41:17
+
+    console.error
+      Error: Error: connect ECONNREFUSED 127.0.0.1:3001
+          at Object.dispatchError (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:63:19)
+          at Request.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+          at Request.emit (node:events:521:24)
+          at ClientRequest.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+          at ClientRequest.emit (node:events:509:28)
+          at emitErrorEvent (node:_http_client:109:11)
+          at Socket.socketErrorListener (node:_http_client:593:5)
+          at Socket.emit (node:events:509:28)
+          at emitErrorNT (node:internal/streams/destroy:170:8)
+          at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+          at processTicksAndRejections (node:internal/process/task_queues:90:21) {
+        type: 'XMLHttpRequest'
+      }
+
+      at VirtualConsole.<anonymous> (../node_modules/jest-environment-jsdom/build/index.js:63:23)
+      at Object.dispatchError (../node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:66:53)
+      at Request.<anonymous> (../node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+      at ClientRequest.<anonymous> (../node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+
+    console.error
+      AxiosError {
+        message: 'Network Error',
+        name: 'AxiosError',
+        code: 'ERR_NETWORK',
+        config: {
+          transitional: {
+            silentJSONParsing: true,
+            forcedJSONParsing: true,
+            clarifyTimeoutError: false
+          },
+          adapter: [ 'xhr', 'http' ],
+          transformRequest: [ [Function: transformRequest] ],
+          transformResponse: [ [Function: transformResponse] ],
+          timeout: 0,
+          xsrfCookieName: 'XSRF-TOKEN',
+          xsrfHeaderName: 'X-XSRF-TOKEN',
+          maxContentLength: -1,
+          maxBodyLength: -1,
+          env: { FormData: [class FormData], Blob: [class Blob] },
+          validateStatus: [Function: validateStatus],
+          headers: Object [AxiosHeaders] {
+            Accept: 'application/json, text/plain, */*',
+            'Content-Type': null
+          },
+          method: 'get',
+          url: 'http://localhost:3001/api/posts',
+          data: undefined
+        },
+        request: XMLHttpRequest {}
+      }
+
+      16 |       })
+      17 |       .catch((error) => {
+    > 18 |         console.error(error);
+         |                 ^
+      19 |       });
+      20 |   }, []);
+      21 |
+
+      at pages/home-page.tsx:18:17
+
+    console.error
+      Error: Error: connect ECONNREFUSED 127.0.0.1:3001
+          at Object.dispatchError (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:63:19)
+          at Request.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+          at Request.emit (node:events:521:24)
+          at ClientRequest.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+          at ClientRequest.emit (node:events:509:28)
+          at emitErrorEvent (node:_http_client:109:11)
+          at Socket.socketErrorListener (node:_http_client:593:5)
+          at Socket.emit (node:events:509:28)
+          at emitErrorNT (node:internal/streams/destroy:170:8)
+          at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+          at processTicksAndRejections (node:internal/process/task_queues:90:21) {
+        type: 'XMLHttpRequest'
+      }
+
+      at VirtualConsole.<anonymous> (../node_modules/jest-environment-jsdom/build/index.js:63:23)
+      at Object.dispatchError (../node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:66:53)
+      at Request.<anonymous> (../node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+      at ClientRequest.<anonymous> (../node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+
+    console.error
+      AxiosError {
+        message: 'Network Error',
+        name: 'AxiosError',
+        code: 'ERR_NETWORK',
+        config: {
+          transitional: {
+            silentJSONParsing: true,
+            forcedJSONParsing: true,
+            clarifyTimeoutError: false
+          },
+          adapter: [ 'xhr', 'http' ],
+          transformRequest: [ [Function: transformRequest] ],
+          transformResponse: [ [Function: transformResponse] ],
+          timeout: 0,
+          xsrfCookieName: 'XSRF-TOKEN',
+          xsrfHeaderName: 'X-XSRF-TOKEN',
+          maxContentLength: -1,
+          maxBodyLength: -1,
+          env: { FormData: [class FormData], Blob: [class Blob] },
+          validateStatus: [Function: validateStatus],
+          headers: Object [AxiosHeaders] {
+            Accept: 'application/json, text/plain, */*',
+            'Content-Type': null
+          },
+          method: 'get',
+          url: 'http://localhost:3001/api/posts/featured',
+          data: undefined
+        },
+        request: XMLHttpRequest {}
+      }
+
+      28 |       })
+      29 |       .catch((error) => {
+    > 30 |         console.error(error);
+         |                 ^
+      31 |       });
+      32 |   }, [selectedCategory]);
+      33 |
+
+      at components/blog-feed.tsx:30:17
+
+    console.error
+      Error: Error: connect ECONNREFUSED 127.0.0.1:3001
+          at Object.dispatchError (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:63:19)
+          at Request.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+          at Request.emit (node:events:521:24)
+          at ClientRequest.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+          at ClientRequest.emit (node:events:509:28)
+          at emitErrorEvent (node:_http_client:109:11)
+          at Socket.socketErrorListener (node:_http_client:593:5)
+          at Socket.emit (node:events:509:28)
+          at emitErrorNT (node:internal/streams/destroy:170:8)
+          at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+          at processTicksAndRejections (node:internal/process/task_queues:90:21) {
+        type: 'XMLHttpRequest'
+      }
+
+      at VirtualConsole.<anonymous> (../node_modules/jest-environment-jsdom/build/index.js:63:23)
+      at Object.dispatchError (../node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:66:53)
+      at Request.<anonymous> (../node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+      at ClientRequest.<anonymous> (../node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+
+    console.error
+      AxiosError {
+        message: 'Network Error',
+        name: 'AxiosError',
+        code: 'ERR_NETWORK',
+        config: {
+          transitional: {
+            silentJSONParsing: true,
+            forcedJSONParsing: true,
+            clarifyTimeoutError: false
+          },
+          adapter: [ 'xhr', 'http' ],
+          transformRequest: [ [Function: transformRequest] ],
+          transformResponse: [ [Function: transformResponse] ],
+          timeout: 0,
+          xsrfCookieName: 'XSRF-TOKEN',
+          xsrfHeaderName: 'X-XSRF-TOKEN',
+          maxContentLength: -1,
+          maxBodyLength: -1,
+          env: { FormData: [class FormData], Blob: [class Blob] },
+          validateStatus: [Function: validateStatus],
+          headers: Object [AxiosHeaders] {
+            Accept: 'application/json, text/plain, */*',
+            'Content-Type': null
+          },
+          method: 'get',
+          url: 'http://localhost:3001/api/posts/latest',
+          data: undefined
+        },
+        request: XMLHttpRequest {}
+      }
+
+      39 |       })
+      40 |       .catch((error) => {
+    > 41 |         console.error(error);
+         |                 ^
+      42 |       });
+      43 |   }, []);
+      44 |
+
+      at components/blog-feed.tsx:41:17
+
+    console.error
+      Error: Error: connect ECONNREFUSED 127.0.0.1:3001
+          at Object.dispatchError (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:63:19)
+          at Request.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+          at Request.emit (node:events:521:24)
+          at ClientRequest.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+          at ClientRequest.emit (node:events:509:28)
+          at emitErrorEvent (node:_http_client:109:11)
+          at Socket.socketErrorListener (node:_http_client:593:5)
+          at Socket.emit (node:events:509:28)
+          at emitErrorNT (node:internal/streams/destroy:170:8)
+          at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+          at processTicksAndRejections (node:internal/process/task_queues:90:21) {
+        type: 'XMLHttpRequest'
+      }
+
+      at VirtualConsole.<anonymous> (../node_modules/jest-environment-jsdom/build/index.js:63:23)
+      at Object.dispatchError (../node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:66:53)
+      at Request.<anonymous> (../node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+      at ClientRequest.<anonymous> (../node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+
+    console.error
+      AxiosError {
+        message: 'Network Error',
+        name: 'AxiosError',
+        code: 'ERR_NETWORK',
+        config: {
+          transitional: {
+            silentJSONParsing: true,
+            forcedJSONParsing: true,
+            clarifyTimeoutError: false
+          },
+          adapter: [ 'xhr', 'http' ],
+          transformRequest: [ [Function: transformRequest] ],
+          transformResponse: [ [Function: transformResponse] ],
+          timeout: 0,
+          xsrfCookieName: 'XSRF-TOKEN',
+          xsrfHeaderName: 'X-XSRF-TOKEN',
+          maxContentLength: -1,
+          maxBodyLength: -1,
+          env: { FormData: [class FormData], Blob: [class Blob] },
+          validateStatus: [Function: validateStatus],
+          headers: Object [AxiosHeaders] {
+            Accept: 'application/json, text/plain, */*',
+            'Content-Type': null
+          },
+          method: 'get',
+          url: 'http://localhost:3001/api/posts',
+          data: undefined
+        },
+        request: XMLHttpRequest {}
+      }
+
+      16 |       })
+      17 |       .catch((error) => {
+    > 18 |         console.error(error);
+         |                 ^
+      19 |       });
+      20 |   }, []);
+      21 |
+
+      at pages/home-page.tsx:18:17
+
+    console.error
+      Error: Error: connect ECONNREFUSED 127.0.0.1:3001
+          at Object.dispatchError (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:63:19)
+          at Request.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+          at Request.emit (node:events:521:24)
+          at ClientRequest.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+          at ClientRequest.emit (node:events:509:28)
+          at emitErrorEvent (node:_http_client:109:11)
+          at Socket.socketErrorListener (node:_http_client:593:5)
+          at Socket.emit (node:events:509:28)
+          at emitErrorNT (node:internal/streams/destroy:170:8)
+          at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+          at processTicksAndRejections (node:internal/process/task_queues:90:21) {
+        type: 'XMLHttpRequest'
+      }
+
+      at VirtualConsole.<anonymous> (../node_modules/jest-environment-jsdom/build/index.js:63:23)
+      at Object.dispatchError (../node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:66:53)
+      at Request.<anonymous> (../node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+      at ClientRequest.<anonymous> (../node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+
+    console.error
+      AxiosError {
+        message: 'Network Error',
+        name: 'AxiosError',
+        code: 'ERR_NETWORK',
+        config: {
+          transitional: {
+            silentJSONParsing: true,
+            forcedJSONParsing: true,
+            clarifyTimeoutError: false
+          },
+          adapter: [ 'xhr', 'http' ],
+          transformRequest: [ [Function: transformRequest] ],
+          transformResponse: [ [Function: transformResponse] ],
+          timeout: 0,
+          xsrfCookieName: 'XSRF-TOKEN',
+          xsrfHeaderName: 'X-XSRF-TOKEN',
+          maxContentLength: -1,
+          maxBodyLength: -1,
+          env: { FormData: [class FormData], Blob: [class Blob] },
+          validateStatus: [Function: validateStatus],
+          headers: Object [AxiosHeaders] {
+            Accept: 'application/json, text/plain, */*',
+            'Content-Type': null
+          },
+          method: 'get',
+          url: 'http://localhost:3001/api/posts/featured',
+          data: undefined
+        },
+        request: XMLHttpRequest {}
+      }
+
+      28 |       })
+      29 |       .catch((error) => {
+    > 30 |         console.error(error);
+         |                 ^
+      31 |       });
+      32 |   }, [selectedCategory]);
+      33 |
+
+      at components/blog-feed.tsx:30:17
+
+    console.error
+      Error: Error: connect ECONNREFUSED 127.0.0.1:3001
+          at Object.dispatchError (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:63:19)
+          at Request.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+          at Request.emit (node:events:521:24)
+          at ClientRequest.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+          at ClientRequest.emit (node:events:509:28)
+          at emitErrorEvent (node:_http_client:109:11)
+          at Socket.socketErrorListener (node:_http_client:593:5)
+          at Socket.emit (node:events:509:28)
+          at emitErrorNT (node:internal/streams/destroy:170:8)
+          at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+          at processTicksAndRejections (node:internal/process/task_queues:90:21) {
+        type: 'XMLHttpRequest'
+      }
+
+      at VirtualConsole.<anonymous> (../node_modules/jest-environment-jsdom/build/index.js:63:23)
+      at Object.dispatchError (../node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:66:53)
+      at Request.<anonymous> (../node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+      at ClientRequest.<anonymous> (../node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+
+    console.error
+      AxiosError {
+        message: 'Network Error',
+        name: 'AxiosError',
+        code: 'ERR_NETWORK',
+        config: {
+          transitional: {
+            silentJSONParsing: true,
+            forcedJSONParsing: true,
+            clarifyTimeoutError: false
+          },
+          adapter: [ 'xhr', 'http' ],
+          transformRequest: [ [Function: transformRequest] ],
+          transformResponse: [ [Function: transformResponse] ],
+          timeout: 0,
+          xsrfCookieName: 'XSRF-TOKEN',
+          xsrfHeaderName: 'X-XSRF-TOKEN',
+          maxContentLength: -1,
+          maxBodyLength: -1,
+          env: { FormData: [class FormData], Blob: [class Blob] },
+          validateStatus: [Function: validateStatus],
+          headers: Object [AxiosHeaders] {
+            Accept: 'application/json, text/plain, */*',
+            'Content-Type': null
+          },
+          method: 'get',
+          url: 'http://localhost:3001/api/posts/latest',
+          data: undefined
+        },
+        request: XMLHttpRequest {}
+      }
+
+      39 |       })
+      40 |       .catch((error) => {
+    > 41 |         console.error(error);
+         |                 ^
+      42 |       });
+      43 |   }, []);
+      44 |
+
+      at components/blog-feed.tsx:41:17
+
+    console.error
+      Error: Error: connect ECONNREFUSED 127.0.0.1:3001
+          at Object.dispatchError (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:63:19)
+          at Request.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+          at Request.emit (node:events:521:24)
+          at ClientRequest.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+          at ClientRequest.emit (node:events:509:28)
+          at emitErrorEvent (node:_http_client:109:11)
+          at Socket.socketErrorListener (node:_http_client:593:5)
+          at Socket.emit (node:events:509:28)
+          at emitErrorNT (node:internal/streams/destroy:170:8)
+          at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+          at processTicksAndRejections (node:internal/process/task_queues:90:21) {
+        type: 'XMLHttpRequest'
+      }
+
+      at VirtualConsole.<anonymous> (../node_modules/jest-environment-jsdom/build/index.js:63:23)
+      at Object.dispatchError (../node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:66:53)
+      at Request.<anonymous> (../node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+      at ClientRequest.<anonymous> (../node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+
+    console.error
+      AxiosError {
+        message: 'Network Error',
+        name: 'AxiosError',
+        code: 'ERR_NETWORK',
+        config: {
+          transitional: {
+            silentJSONParsing: true,
+            forcedJSONParsing: true,
+            clarifyTimeoutError: false
+          },
+          adapter: [ 'xhr', 'http' ],
+          transformRequest: [ [Function: transformRequest] ],
+          transformResponse: [ [Function: transformResponse] ],
+          timeout: 0,
+          xsrfCookieName: 'XSRF-TOKEN',
+          xsrfHeaderName: 'X-XSRF-TOKEN',
+          maxContentLength: -1,
+          maxBodyLength: -1,
+          env: { FormData: [class FormData], Blob: [class Blob] },
+          validateStatus: [Function: validateStatus],
+          headers: Object [AxiosHeaders] {
+            Accept: 'application/json, text/plain, */*',
+            'Content-Type': null
+          },
+          method: 'get',
+          url: 'http://localhost:3001/api/posts',
+          data: undefined
+        },
+        request: XMLHttpRequest {}
+      }
+
+      16 |       })
+      17 |       .catch((error) => {
+    > 18 |         console.error(error);
+         |                 ^
+      19 |       });
+      20 |   }, []);
+      21 |
+
+      at pages/home-page.tsx:18:17
+
+    console.error
+      Error: Error: connect ECONNREFUSED 127.0.0.1:3001
+          at Object.dispatchError (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:63:19)
+          at Request.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+          at Request.emit (node:events:521:24)
+          at ClientRequest.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+          at ClientRequest.emit (node:events:509:28)
+          at emitErrorEvent (node:_http_client:109:11)
+          at Socket.socketErrorListener (node:_http_client:593:5)
+          at Socket.emit (node:events:509:28)
+          at emitErrorNT (node:internal/streams/destroy:170:8)
+          at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+          at processTicksAndRejections (node:internal/process/task_queues:90:21) {
+        type: 'XMLHttpRequest'
+      }
+
+      at VirtualConsole.<anonymous> (../node_modules/jest-environment-jsdom/build/index.js:63:23)
+      at Object.dispatchError (../node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:66:53)
+      at Request.<anonymous> (../node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+      at ClientRequest.<anonymous> (../node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+
+    console.error
+      AxiosError {
+        message: 'Network Error',
+        name: 'AxiosError',
+        code: 'ERR_NETWORK',
+        config: {
+          transitional: {
+            silentJSONParsing: true,
+            forcedJSONParsing: true,
+            clarifyTimeoutError: false
+          },
+          adapter: [ 'xhr', 'http' ],
+          transformRequest: [ [Function: transformRequest] ],
+          transformResponse: [ [Function: transformResponse] ],
+          timeout: 0,
+          xsrfCookieName: 'XSRF-TOKEN',
+          xsrfHeaderName: 'X-XSRF-TOKEN',
+          maxContentLength: -1,
+          maxBodyLength: -1,
+          env: { FormData: [class FormData], Blob: [class Blob] },
+          validateStatus: [Function: validateStatus],
+          headers: Object [AxiosHeaders] {
+            Accept: 'application/json, text/plain, */*',
+            'Content-Type': null
+          },
+          method: 'get',
+          url: 'http://localhost:3001/api/posts/featured',
+          data: undefined
+        },
+        request: XMLHttpRequest {}
+      }
+
+      28 |       })
+      29 |       .catch((error) => {
+    > 30 |         console.error(error);
+         |                 ^
+      31 |       });
+      32 |   }, [selectedCategory]);
+      33 |
+
+      at components/blog-feed.tsx:30:17
+
+    console.error
+      Error: Error: connect ECONNREFUSED 127.0.0.1:3001
+          at Object.dispatchError (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:63:19)
+          at Request.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+          at Request.emit (node:events:521:24)
+          at ClientRequest.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+          at ClientRequest.emit (node:events:509:28)
+          at emitErrorEvent (node:_http_client:109:11)
+          at Socket.socketErrorListener (node:_http_client:593:5)
+          at Socket.emit (node:events:509:28)
+          at emitErrorNT (node:internal/streams/destroy:170:8)
+          at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+          at processTicksAndRejections (node:internal/process/task_queues:90:21) {
+        type: 'XMLHttpRequest'
+      }
+
+      at VirtualConsole.<anonymous> (../node_modules/jest-environment-jsdom/build/index.js:63:23)
+      at Object.dispatchError (../node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:66:53)
+      at Request.<anonymous> (../node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+      at ClientRequest.<anonymous> (../node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+
+    console.error
+      AxiosError {
+        message: 'Network Error',
+        name: 'AxiosError',
+        code: 'ERR_NETWORK',
+        config: {
+          transitional: {
+            silentJSONParsing: true,
+            forcedJSONParsing: true,
+            clarifyTimeoutError: false
+          },
+          adapter: [ 'xhr', 'http' ],
+          transformRequest: [ [Function: transformRequest] ],
+          transformResponse: [ [Function: transformResponse] ],
+          timeout: 0,
+          xsrfCookieName: 'XSRF-TOKEN',
+          xsrfHeaderName: 'X-XSRF-TOKEN',
+          maxContentLength: -1,
+          maxBodyLength: -1,
+          env: { FormData: [class FormData], Blob: [class Blob] },
+          validateStatus: [Function: validateStatus],
+          headers: Object [AxiosHeaders] {
+            Accept: 'application/json, text/plain, */*',
+            'Content-Type': null
+          },
+          method: 'get',
+          url: 'http://localhost:3001/api/posts/latest',
+          data: undefined
+        },
+        request: XMLHttpRequest {}
+      }
+
+      39 |       })
+      40 |       .catch((error) => {
+    > 41 |         console.error(error);
+         |                 ^
+      42 |       });
+      43 |   }, []);
+      44 |
+
+      at components/blog-feed.tsx:41:17
+
+    console.error
+      Error: Error: connect ECONNREFUSED 127.0.0.1:3001
+          at Object.dispatchError (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:63:19)
+          at Request.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+          at Request.emit (node:events:521:24)
+          at ClientRequest.<anonymous> (/home/devops/mega-devops-project/frontend/node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+          at ClientRequest.emit (node:events:509:28)
+          at emitErrorEvent (node:_http_client:109:11)
+          at Socket.socketErrorListener (node:_http_client:593:5)
+          at Socket.emit (node:events:509:28)
+          at emitErrorNT (node:internal/streams/destroy:170:8)
+          at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+          at processTicksAndRejections (node:internal/process/task_queues:90:21) {
+        type: 'XMLHttpRequest'
+      }
+
+      at VirtualConsole.<anonymous> (../node_modules/jest-environment-jsdom/build/index.js:63:23)
+      at Object.dispatchError (../node_modules/jsdom/lib/jsdom/living/xhr/xhr-utils.js:66:53)
+      at Request.<anonymous> (../node_modules/jsdom/lib/jsdom/living/xhr/XMLHttpRequest-impl.js:655:18)
+      at ClientRequest.<anonymous> (../node_modules/jsdom/lib/jsdom/living/helpers/http-request.js:121:14)
+
+    console.error
+      AxiosError {
+        message: 'Network Error',
+        name: 'AxiosError',
+        code: 'ERR_NETWORK',
+        config: {
+          transitional: {
+            silentJSONParsing: true,
+            forcedJSONParsing: true,
+            clarifyTimeoutError: false
+          },
+          adapter: [ 'xhr', 'http' ],
+          transformRequest: [ [Function: transformRequest] ],
+          transformResponse: [ [Function: transformResponse] ],
+          timeout: 0,
+          xsrfCookieName: 'XSRF-TOKEN',
+          xsrfHeaderName: 'X-XSRF-TOKEN',
+          maxContentLength: -1,
+          maxBodyLength: -1,
+          env: { FormData: [class FormData], Blob: [class Blob] },
+          validateStatus: [Function: validateStatus],
+          headers: Object [AxiosHeaders] {
+            Accept: 'application/json, text/plain, */*',
+            'Content-Type': null
+          },
+          method: 'get',
+          url: 'http://localhost:3001/api/posts',
+          data: undefined
+        },
+        request: XMLHttpRequest {}
+      }
+
+      16 |       })
+      17 |       .catch((error) => {
+    > 18 |         console.error(error);
+         |                 ^
+      19 |       });
+      20 |   }, []);
+      21 |
+
+      at pages/home-page.tsx:18:17
+
+  ● Integration Test: Home Route › Home Route: Renders home page
+
+    TestingLibraryElementError: Unable to find an element with the text: /All Posts/. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"w-full cursor-default bg-light dark:bg-dark"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"relative -mt-2 h-[460px] bg-[url('./assets/wanderlustbg.webp')] bg-cover bg-fixed bg-center"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"absolute inset-0 bg-black opacity-50"[39m
+            [36m/>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"absolute inset-0 flex flex-col px-4 py-8 text-slate-50 md:px-16"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"flex w-full justify-between"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"flex cursor-text items-center justify-between text-2xl font-semibold"[39m
+                [36m>[39m
+                  [0mWanderLust[0m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"flex justify-between px-2"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"flex items-center justify-end px-2 py-2 md:px-20"[39m
+                  [36m>[39m
+                    [36m<div>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"bg-light-theme-background flex h-8 w-16 cursor-pointer items-center justify-start rounded-full px-1 py-1"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m" translate-x-0 bg-light-theme-foreground h-6 w-6 rounded-full bg-black px-1 py-1 duration-300"[39m
+                        [36m>[39m
+                          [36m<img[39m
+                            [33msrc[39m=[32m"test-file-stub"[39m
+                          [36m/>[39m
+                        [36m</div>[39m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"active:scale-click hidden rounded border border-slate-50 px-4 py-2 hover:bg-slate-500/25 md:inline-block"[39m
+                  [36m>[39m
+                    [0mCreate post[0m
+                  [36m</button>[39m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"px-2 py-2 hover:bg-slate-500/25 md:hidden"[39m
+                  [36m>[39m
+                    [36m<img[39m
+                      [33mclass[39m=[32m"h-10 w-10"[39m
+                      [33msrc[39m=[32m"test-file-stub"[39m
+                    [36m/>[39m
+                  [36m</button>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"mb-8 flex max-w-3xl flex-1 flex-col justify-end text-slate-50"[39m
+              [36m>[39m
+                [36m<h1[39m
+                  [33mclass[39m=[32m"cursor-text text-xl font-bold md:text-4xl"[39m
+                [36m>[39m
+                  [0mJourney Beyond Horizons[0m
+                [36m</h1>[39m
+                [36m<p[39m
+                  [33mclass[39m=[32m"my-4 cursor-text text-base md:text-lg"[39m
+                [36m>[39m
+                  [0mDive into the world of travel with stories that transport you to far-off lands. Adventure awaits around every corner. It's time to explore the world![0m
+                [36m</p>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"cursor-text text-sm font-semibold md:text-xl"[39m
+                [36m>[39m
+                  [0mLet's go![0m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"mx-4 md:mx-8 lg:mx-16"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"mx-auto my-6"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"-mx-4 flex flex-wrap"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"w-full p-4 md:w-2/3"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"-mb-1 cursor-text text-base tracking-wide text-slate-500 dark:text-dark-tertiary"[39m
+                  [36m>[39m
+                    [0mWhat's hot?[0m
+                  [36m</div>[39m
+                  [36m<h1[39m
+                    [33mclass[39m=[32m"mb-2 cursor-text text-xl font-semibold dark:text-dark-primary"[39m
+                  [36m>[39m
+                    [0mFeatured Posts[0m
+                  [36m</h1>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"flex flex-col gap-6"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"flex flex-col rounded-lg bg-light dark:bg-dark-card sm:flex-row"[39m
+                      [33mdata-testid[39m=[32m"featurepostcardskeleton"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"mb-4 w-full sm:mb-0 sm:w-1/3"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"animate-pulse h-50 w-full rounded-lg bg-slate-200 object-cover shadow-lg dark:bg-slate-700 sm:h-full"[39m
+                          [33mstyle[39m=[32m"height: 190px;"[39m
+                        [36m/>[39m
+                      [36m</div>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"flex flex-col p-3 sm:w-2/3"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"animate-pulse rounded-md mb-3 h-6 w-full bg-slate-200 dark:bg-slate-700"[39m
+                        [36m/>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"mb-3 flex flex-wrap gap-2"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"animate-pulse h-6 w-16 rounded-full bg-slate-200 dark:bg-slate-700"[39m
+                          [36m/>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"animate-pulse h-6 w-16 rounded-full bg-slate-200 dark:bg-slate-700"[39m
+                          [36m/>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"animate-pulse h-6 w-16 rounded-full bg-slate-200 dark:bg-slate-700"[39m
+                          [36m/>[39m
+                        [36m</div>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"animate-pulse rounded-md mb-4 h-10 w-full bg-slate-200 dark:bg-slate-700 sm:h-16 lg:h-16"[39m
+                        [36m/>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"flex items-end"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"animate-pulse rounded-md h-3 w-1/3 bg-slate-200 dark:bg-slate-700"[39m
+                          [36m/>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+          ...
+
+      37 |     expect(screen.getAllByTestId('featurepostcardskeleton')).toHaveLength(5);
+      38 |     expect(screen.getAllByTestId('latestpostcardskeleton')).toHaveLength(5);
+    > 39 |     expect(screen.getByText(/All Posts/)).toBeInTheDocument();
+         |                   ^
+      40 |     expect(screen.getAllByTestId('postcardskeleton')).toHaveLength(8);
+      41 |   });
+      42 |   test('Home Route: Verify navigation on create post button click', async () => {
+
+      at Object.getElementError (../node_modules/@testing-library/dom/dist/config.js:37:19)
+      at ../node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at ../node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at ../node_modules/@testing-library/dom/dist/query-helpers.js:95:19
+      at Object.<anonymous> (__tests__/integration/home.test.tsx:39:19)
+
+  ● Integration Test: Home Route › Home Route: Verify filtered posts render on category button click
+
+    Unable to find an element by: [data-testid="featuredPostCard"]
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"w-full cursor-default bg-light dark:bg-dark"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"relative -mt-2 h-[460px] bg-[url('./assets/wanderlustbg.webp')] bg-cover bg-fixed bg-center"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"absolute inset-0 bg-black opacity-50"[39m
+            [36m/>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"absolute inset-0 flex flex-col px-4 py-8 text-slate-50 md:px-16"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"flex w-full justify-between"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"flex cursor-text items-center justify-between text-2xl font-semibold"[39m
+                [36m>[39m
+                  [0mWanderLust[0m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"flex justify-between px-2"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"flex items-center justify-end px-2 py-2 md:px-20"[39m
+                  [36m>[39m
+                    [36m<div>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"bg-light-theme-background flex h-8 w-16 cursor-pointer items-center justify-start rounded-full px-1 py-1"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m" translate-x-0 bg-light-theme-foreground h-6 w-6 rounded-full bg-black px-1 py-1 duration-300"[39m
+                        [36m>[39m
+                          [36m<img[39m
+                            [33msrc[39m=[32m"test-file-stub"[39m
+                          [36m/>[39m
+                        [36m</div>[39m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"active:scale-click hidden rounded border border-slate-50 px-4 py-2 hover:bg-slate-500/25 md:inline-block"[39m
+                  [36m>[39m
+                    [0mCreate post[0m
+                  [36m</button>[39m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"px-2 py-2 hover:bg-slate-500/25 md:hidden"[39m
+                  [36m>[39m
+                    [36m<img[39m
+                      [33mclass[39m=[32m"h-10 w-10"[39m
+                      [33msrc[39m=[32m"test-file-stub"[39m
+                    [36m/>[39m
+                  [36m</button>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"mb-8 flex max-w-3xl flex-1 flex-col justify-end text-slate-50"[39m
+              [36m>[39m
+                [36m<h1[39m
+                  [33mclass[39m=[32m"cursor-text text-xl font-bold md:text-4xl"[39m
+                [36m>[39m
+                  [0mJourney Beyond Horizons[0m
+                [36m</h1>[39m
+                [36m<p[39m
+                  [33mclass[39m=[32m"my-4 cursor-text text-base md:text-lg"[39m
+                [36m>[39m
+                  [0mDive into the world of travel with stories that transport you to far-off lands. Adventure awaits around every corner. It's time to explore the world![0m
+                [36m</p>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"cursor-text text-sm font-semibold md:text-xl"[39m
+                [36m>[39m
+                  [0mLet's go![0m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"mx-4 md:mx-8 lg:mx-16"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"mx-auto my-6"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"-mx-4 flex flex-wrap"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"w-full p-4 md:w-2/3"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"-mb-1 cursor-text text-base tracking-wide text-slate-500 dark:text-dark-tertiary"[39m
+                  [36m>[39m
+                    [0mWhat's hot?[0m
+                  [36m</div>[39m
+                  [36m<h1[39m
+                    [33mclass[39m=[32m"mb-2 cursor-text text-xl font-semibold dark:text-dark-primary"[39m
+                  [36m>[39m
+                    [0mFeatured Posts[0m
+                  [36m</h1>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"flex flex-col gap-6"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"flex flex-col rounded-lg bg-light dark:bg-dark-card sm:flex-row"[39m
+                      [33mdata-testid[39m=[32m"featurepostcardskeleton"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"mb-4 w-full sm:mb-0 sm:w-1/3"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"animate-pulse h-50 w-full rounded-lg bg-slate-200 object-cover shadow-lg dark:bg-slate-700 sm:h-full"[39m
+                          [33mstyle[39m=[32m"height: 190px;"[39m
+                        [36m/>[39m
+                      [36m</div>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"flex flex-col p-3 sm:w-2/3"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"animate-pulse rounded-md mb-3 h-6 w-full bg-slate-200 dark:bg-slate-700"[39m
+                        [36m/>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"mb-3 flex flex-wrap gap-2"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"animate-pulse h-6 w-16 rounded-full bg-slate-200 dark:bg-slate-700"[39m
+                          [36m/>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"animate-pulse h-6 w-16 rounded-full bg-slate-200 dark:bg-slate-700"[39m
+                          [36m/>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"animate-pulse h-6 w-16 rounded-full bg-slate-200 dark:bg-slate-700"[39m
+                          [36m/>[39m
+                        [36m</div>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"animate-pulse rounded-md mb-4 h-10 w-full bg-slate-200 dark:bg-slate-700 sm:h-16 lg:h-16"[39m
+                        [36m/>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"flex items-end"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"animate-pulse rounded-md h-3 w-1/3 bg-slate-200 dark:bg-slate-700"[39m
+                          [36m/>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+          ...
+
+      72 |     //ASSERT
+      73 |     expect(screen.queryByTestId('featuredPostCard')).not.toBeInTheDocument();
+    > 74 |     const featuredPostCard = await screen.findAllByTestId('featuredPostCard');
+         |                                           ^
+      75 |     expect(featuredPostCard).toHaveLength(5);
+      76 |     const natureCategoryPill = screen.getByRole('button', {
+      77 |       name: 'Nature',
+
+      at waitForWrapper (../node_modules/@testing-library/dom/dist/wait-for.js:162:27)
+      at ../node_modules/@testing-library/dom/dist/query-helpers.js:86:33
+      at Object.<anonymous> (__tests__/integration/home.test.tsx:74:43)
+
+  ● Integration Test: Home Route › Home Route: Verify navigation on post card click under Featured Posts section
+
+    Unable to find an element by: [data-testid="featuredPostCard"]
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"w-full cursor-default bg-light dark:bg-dark"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"relative -mt-2 h-[460px] bg-[url('./assets/wanderlustbg.webp')] bg-cover bg-fixed bg-center"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"absolute inset-0 bg-black opacity-50"[39m
+            [36m/>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"absolute inset-0 flex flex-col px-4 py-8 text-slate-50 md:px-16"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"flex w-full justify-between"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"flex cursor-text items-center justify-between text-2xl font-semibold"[39m
+                [36m>[39m
+                  [0mWanderLust[0m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"flex justify-between px-2"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"flex items-center justify-end px-2 py-2 md:px-20"[39m
+                  [36m>[39m
+                    [36m<div>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"bg-light-theme-background flex h-8 w-16 cursor-pointer items-center justify-start rounded-full px-1 py-1"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m" translate-x-0 bg-light-theme-foreground h-6 w-6 rounded-full bg-black px-1 py-1 duration-300"[39m
+                        [36m>[39m
+                          [36m<img[39m
+                            [33msrc[39m=[32m"test-file-stub"[39m
+                          [36m/>[39m
+                        [36m</div>[39m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"active:scale-click hidden rounded border border-slate-50 px-4 py-2 hover:bg-slate-500/25 md:inline-block"[39m
+                  [36m>[39m
+                    [0mCreate post[0m
+                  [36m</button>[39m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"px-2 py-2 hover:bg-slate-500/25 md:hidden"[39m
+                  [36m>[39m
+                    [36m<img[39m
+                      [33mclass[39m=[32m"h-10 w-10"[39m
+                      [33msrc[39m=[32m"test-file-stub"[39m
+                    [36m/>[39m
+                  [36m</button>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"mb-8 flex max-w-3xl flex-1 flex-col justify-end text-slate-50"[39m
+              [36m>[39m
+                [36m<h1[39m
+                  [33mclass[39m=[32m"cursor-text text-xl font-bold md:text-4xl"[39m
+                [36m>[39m
+                  [0mJourney Beyond Horizons[0m
+                [36m</h1>[39m
+                [36m<p[39m
+                  [33mclass[39m=[32m"my-4 cursor-text text-base md:text-lg"[39m
+                [36m>[39m
+                  [0mDive into the world of travel with stories that transport you to far-off lands. Adventure awaits around every corner. It's time to explore the world![0m
+                [36m</p>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"cursor-text text-sm font-semibold md:text-xl"[39m
+                [36m>[39m
+                  [0mLet's go![0m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"mx-4 md:mx-8 lg:mx-16"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"mx-auto my-6"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"-mx-4 flex flex-wrap"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"w-full p-4 md:w-2/3"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"-mb-1 cursor-text text-base tracking-wide text-slate-500 dark:text-dark-tertiary"[39m
+                  [36m>[39m
+                    [0mWhat's hot?[0m
+                  [36m</div>[39m
+                  [36m<h1[39m
+                    [33mclass[39m=[32m"mb-2 cursor-text text-xl font-semibold dark:text-dark-primary"[39m
+                  [36m>[39m
+                    [0mFeatured Posts[0m
+                  [36m</h1>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"flex flex-col gap-6"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"flex flex-col rounded-lg bg-light dark:bg-dark-card sm:flex-row"[39m
+                      [33mdata-testid[39m=[32m"featurepostcardskeleton"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"mb-4 w-full sm:mb-0 sm:w-1/3"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"animate-pulse h-50 w-full rounded-lg bg-slate-200 object-cover shadow-lg dark:bg-slate-700 sm:h-full"[39m
+                          [33mstyle[39m=[32m"height: 190px;"[39m
+                        [36m/>[39m
+                      [36m</div>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"flex flex-col p-3 sm:w-2/3"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"animate-pulse rounded-md mb-3 h-6 w-full bg-slate-200 dark:bg-slate-700"[39m
+                        [36m/>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"mb-3 flex flex-wrap gap-2"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"animate-pulse h-6 w-16 rounded-full bg-slate-200 dark:bg-slate-700"[39m
+                          [36m/>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"animate-pulse h-6 w-16 rounded-full bg-slate-200 dark:bg-slate-700"[39m
+                          [36m/>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"animate-pulse h-6 w-16 rounded-full bg-slate-200 dark:bg-slate-700"[39m
+                          [36m/>[39m
+                        [36m</div>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"animate-pulse rounded-md mb-4 h-10 w-full bg-slate-200 dark:bg-slate-700 sm:h-16 lg:h-16"[39m
+                        [36m/>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"flex items-end"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"animate-pulse rounded-md h-3 w-1/3 bg-slate-200 dark:bg-slate-700"[39m
+                          [36m/>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+          ...
+
+      92 |     //ACT
+      93 |     //ASSERT
+    > 94 |     const featuredPostCard = await screen.findAllByTestId('featuredPostCard');
+         |                                           ^
+      95 |     expect(featuredPostCard).toHaveLength(5);
+      96 |     await userEvent.click(featuredPostCard[0]);
+      97 |     expect(mockedUseNavigate).toHaveBeenCalledTimes(1);
+
+      at waitForWrapper (../node_modules/@testing-library/dom/dist/wait-for.js:162:27)
+      at ../node_modules/@testing-library/dom/dist/query-helpers.js:86:33
+      at Object.<anonymous> (__tests__/integration/home.test.tsx:94:43)
+
+  ● Integration Test: Home Route › Home Route: Verify render of post card under All Post section
+
+    Unable to find an element by: [data-testid="postcard"]
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"w-full cursor-default bg-light dark:bg-dark"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"relative -mt-2 h-[460px] bg-[url('./assets/wanderlustbg.webp')] bg-cover bg-fixed bg-center"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"absolute inset-0 bg-black opacity-50"[39m
+            [36m/>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"absolute inset-0 flex flex-col px-4 py-8 text-slate-50 md:px-16"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"flex w-full justify-between"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"flex cursor-text items-center justify-between text-2xl font-semibold"[39m
+                [36m>[39m
+                  [0mWanderLust[0m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"flex justify-between px-2"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"flex items-center justify-end px-2 py-2 md:px-20"[39m
+                  [36m>[39m
+                    [36m<div>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"bg-light-theme-background flex h-8 w-16 cursor-pointer items-center justify-start rounded-full px-1 py-1"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m" translate-x-0 bg-light-theme-foreground h-6 w-6 rounded-full bg-black px-1 py-1 duration-300"[39m
+                        [36m>[39m
+                          [36m<img[39m
+                            [33msrc[39m=[32m"test-file-stub"[39m
+                          [36m/>[39m
+                        [36m</div>[39m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"active:scale-click hidden rounded border border-slate-50 px-4 py-2 hover:bg-slate-500/25 md:inline-block"[39m
+                  [36m>[39m
+                    [0mCreate post[0m
+                  [36m</button>[39m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"px-2 py-2 hover:bg-slate-500/25 md:hidden"[39m
+                  [36m>[39m
+                    [36m<img[39m
+                      [33mclass[39m=[32m"h-10 w-10"[39m
+                      [33msrc[39m=[32m"test-file-stub"[39m
+                    [36m/>[39m
+                  [36m</button>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"mb-8 flex max-w-3xl flex-1 flex-col justify-end text-slate-50"[39m
+              [36m>[39m
+                [36m<h1[39m
+                  [33mclass[39m=[32m"cursor-text text-xl font-bold md:text-4xl"[39m
+                [36m>[39m
+                  [0mJourney Beyond Horizons[0m
+                [36m</h1>[39m
+                [36m<p[39m
+                  [33mclass[39m=[32m"my-4 cursor-text text-base md:text-lg"[39m
+                [36m>[39m
+                  [0mDive into the world of travel with stories that transport you to far-off lands. Adventure awaits around every corner. It's time to explore the world![0m
+                [36m</p>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"cursor-text text-sm font-semibold md:text-xl"[39m
+                [36m>[39m
+                  [0mLet's go![0m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"mx-4 md:mx-8 lg:mx-16"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"mx-auto my-6"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"-mx-4 flex flex-wrap"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"w-full p-4 md:w-2/3"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"-mb-1 cursor-text text-base tracking-wide text-slate-500 dark:text-dark-tertiary"[39m
+                  [36m>[39m
+                    [0mWhat's hot?[0m
+                  [36m</div>[39m
+                  [36m<h1[39m
+                    [33mclass[39m=[32m"mb-2 cursor-text text-xl font-semibold dark:text-dark-primary"[39m
+                  [36m>[39m
+                    [0mFeatured Posts[0m
+                  [36m</h1>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"flex flex-col gap-6"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"flex flex-col rounded-lg bg-light dark:bg-dark-card sm:flex-row"[39m
+                      [33mdata-testid[39m=[32m"featurepostcardskeleton"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"mb-4 w-full sm:mb-0 sm:w-1/3"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"animate-pulse h-50 w-full rounded-lg bg-slate-200 object-cover shadow-lg dark:bg-slate-700 sm:h-full"[39m
+                          [33mstyle[39m=[32m"height: 190px;"[39m
+                        [36m/>[39m
+                      [36m</div>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"flex flex-col p-3 sm:w-2/3"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"animate-pulse rounded-md mb-3 h-6 w-full bg-slate-200 dark:bg-slate-700"[39m
+                        [36m/>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"mb-3 flex flex-wrap gap-2"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"animate-pulse h-6 w-16 rounded-full bg-slate-200 dark:bg-slate-700"[39m
+                          [36m/>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"animate-pulse h-6 w-16 rounded-full bg-slate-200 dark:bg-slate-700"[39m
+                          [36m/>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"animate-pulse h-6 w-16 rounded-full bg-slate-200 dark:bg-slate-700"[39m
+                          [36m/>[39m
+                        [36m</div>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"animate-pulse rounded-md mb-4 h-10 w-full bg-slate-200 dark:bg-slate-700 sm:h-16 lg:h-16"[39m
+                        [36m/>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"flex items-end"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"animate-pulse rounded-md h-3 w-1/3 bg-slate-200 dark:bg-slate-700"[39m
+                          [36m/>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+          ...
+
+      106 |     //ACT
+      107 |     //ASSERT
+    > 108 |     expect(await screen.findAllByTestId('postcard')).toHaveLength(10);
+          |                         ^
+      109 |   });
+      110 |   test('Home Route: Verify navigation on post card click under All Posts section', async () => {
+      111 |     //ARRANGE
+
+      at waitForWrapper (../node_modules/@testing-library/dom/dist/wait-for.js:162:27)
+      at ../node_modules/@testing-library/dom/dist/query-helpers.js:86:33
+      at Object.<anonymous> (__tests__/integration/home.test.tsx:108:25)
+
+  ● Integration Test: Home Route › Home Route: Verify navigation on post card click under All Posts section
+
+    Unable to find an element by: [data-testid="postcard"]
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"w-full cursor-default bg-light dark:bg-dark"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"relative -mt-2 h-[460px] bg-[url('./assets/wanderlustbg.webp')] bg-cover bg-fixed bg-center"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"absolute inset-0 bg-black opacity-50"[39m
+            [36m/>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"absolute inset-0 flex flex-col px-4 py-8 text-slate-50 md:px-16"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"flex w-full justify-between"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"flex cursor-text items-center justify-between text-2xl font-semibold"[39m
+                [36m>[39m
+                  [0mWanderLust[0m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"flex justify-between px-2"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"flex items-center justify-end px-2 py-2 md:px-20"[39m
+                  [36m>[39m
+                    [36m<div>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"bg-light-theme-background flex h-8 w-16 cursor-pointer items-center justify-start rounded-full px-1 py-1"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m" translate-x-0 bg-light-theme-foreground h-6 w-6 rounded-full bg-black px-1 py-1 duration-300"[39m
+                        [36m>[39m
+                          [36m<img[39m
+                            [33msrc[39m=[32m"test-file-stub"[39m
+                          [36m/>[39m
+                        [36m</div>[39m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"active:scale-click hidden rounded border border-slate-50 px-4 py-2 hover:bg-slate-500/25 md:inline-block"[39m
+                  [36m>[39m
+                    [0mCreate post[0m
+                  [36m</button>[39m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"px-2 py-2 hover:bg-slate-500/25 md:hidden"[39m
+                  [36m>[39m
+                    [36m<img[39m
+                      [33mclass[39m=[32m"h-10 w-10"[39m
+                      [33msrc[39m=[32m"test-file-stub"[39m
+                    [36m/>[39m
+                  [36m</button>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"mb-8 flex max-w-3xl flex-1 flex-col justify-end text-slate-50"[39m
+              [36m>[39m
+                [36m<h1[39m
+                  [33mclass[39m=[32m"cursor-text text-xl font-bold md:text-4xl"[39m
+                [36m>[39m
+                  [0mJourney Beyond Horizons[0m
+                [36m</h1>[39m
+                [36m<p[39m
+                  [33mclass[39m=[32m"my-4 cursor-text text-base md:text-lg"[39m
+                [36m>[39m
+                  [0mDive into the world of travel with stories that transport you to far-off lands. Adventure awaits around every corner. It's time to explore the world![0m
+                [36m</p>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"cursor-text text-sm font-semibold md:text-xl"[39m
+                [36m>[39m
+                  [0mLet's go![0m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"mx-4 md:mx-8 lg:mx-16"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"mx-auto my-6"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"-mx-4 flex flex-wrap"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"w-full p-4 md:w-2/3"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"-mb-1 cursor-text text-base tracking-wide text-slate-500 dark:text-dark-tertiary"[39m
+                  [36m>[39m
+                    [0mWhat's hot?[0m
+                  [36m</div>[39m
+                  [36m<h1[39m
+                    [33mclass[39m=[32m"mb-2 cursor-text text-xl font-semibold dark:text-dark-primary"[39m
+                  [36m>[39m
+                    [0mFeatured Posts[0m
+                  [36m</h1>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"flex flex-col gap-6"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"flex flex-col rounded-lg bg-light dark:bg-dark-card sm:flex-row"[39m
+                      [33mdata-testid[39m=[32m"featurepostcardskeleton"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"mb-4 w-full sm:mb-0 sm:w-1/3"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"animate-pulse h-50 w-full rounded-lg bg-slate-200 object-cover shadow-lg dark:bg-slate-700 sm:h-full"[39m
+                          [33mstyle[39m=[32m"height: 190px;"[39m
+                        [36m/>[39m
+                      [36m</div>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"flex flex-col p-3 sm:w-2/3"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"animate-pulse rounded-md mb-3 h-6 w-full bg-slate-200 dark:bg-slate-700"[39m
+                        [36m/>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"mb-3 flex flex-wrap gap-2"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"animate-pulse h-6 w-16 rounded-full bg-slate-200 dark:bg-slate-700"[39m
+                          [36m/>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"animate-pulse h-6 w-16 rounded-full bg-slate-200 dark:bg-slate-700"[39m
+                          [36m/>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"animate-pulse h-6 w-16 rounded-full bg-slate-200 dark:bg-slate-700"[39m
+                          [36m/>[39m
+                        [36m</div>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"animate-pulse rounded-md mb-4 h-10 w-full bg-slate-200 dark:bg-slate-700 sm:h-16 lg:h-16"[39m
+                        [36m/>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"flex items-end"[39m
+                        [36m>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"animate-pulse rounded-md h-3 w-1/3 bg-slate-200 dark:bg-slate-700"[39m
+                          [36m/>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+          ...
+
+      117 |     //ACT
+      118 |     //ASSERT
+    > 119 |     const allPostCard = await screen.findAllByTestId('postcard');
+          |                                      ^
+      120 |     expect(allPostCard).toHaveLength(10);
+      121 |     /**
+      122 |      * INFO:
+
+      at waitForWrapper (../node_modules/@testing-library/dom/dist/wait-for.js:162:27)
+      at ../node_modules/@testing-library/dom/dist/query-helpers.js:86:33
+      at Object.<anonymous> (__tests__/integration/home.test.tsx:119:38)
+
+Test Suites: 1 failed, 1 passed, 2 total
+Tests:       5 failed, 2 passed, 7 total
+Snapshots:   0 total
+Time:        8.016 s
+Ran all test suites.
