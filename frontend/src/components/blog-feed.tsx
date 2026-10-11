@@ -6,12 +6,15 @@ import { FeaturedPostCardSkeleton } from '@/components/skeletons/featured-post-c
 import { LatestPostCardSkeleton } from '@/components/skeletons/latest-post-card-skeleton';
 import CategoryPill from '@/components/category-pill';
 import { categories } from '@/utils/category-colors';
+import Post from '@/types/post-type';
+import { getSampleTours, sampleTours } from '@/constants/sample-tours';
 
 export default function BlogFeed() {
   const [selectedCategory, setSelectedCategory] = useState('featured');
-  const [posts, setPosts] = useState([]);
-  const [latestPosts, setLatestPosts] = useState([]);
+  const [posts, setPosts] = useState<Post[]>([]);
+  const [latestPosts, setLatestPosts] = useState<Post[]>([]);
   const [loading, setLoading] = useState(true);
+  const [latestLoading, setLatestLoading] = useState(true);
 
   useEffect(() => {
     let categoryEndpoint =
@@ -24,10 +27,12 @@ export default function BlogFeed() {
       .get(import.meta.env.VITE_API_PATH + categoryEndpoint)
       .then((response) => {
         setPosts(response.data);
-        setLoading(false);
       })
       .catch((error) => {
         console.error(error);
+      })
+      .finally(() => {
+        setLoading(false);
       });
   }, [selectedCategory]);
 
@@ -39,8 +44,17 @@ export default function BlogFeed() {
       })
       .catch((error) => {
         console.error(error);
+      })
+      .finally(() => {
+        setLatestLoading(false);
       });
   }, []);
+
+  // Static tour examples keep the feed populated when the API returns nothing,
+  // so the landing page never renders empty skeleton blocks. Selecting a
+  // category filters these examples to that category when no live posts match.
+  const displayedPosts: Post[] = posts.length > 0 ? posts : getSampleTours(selectedCategory);
+  const displayedLatest: Post[] = latestPosts.length > 0 ? latestPosts : sampleTours;
 
   return (
     <div className="mx-auto my-6">
@@ -55,11 +69,11 @@ export default function BlogFeed() {
               : `Posts related to "${selectedCategory}"`}
           </h1>
           <div className="flex flex-col gap-6">
-            {posts.length === 0 || loading == true
+            {loading
               ? Array(5)
                   .fill(0)
                   .map((_, index) => <FeaturedPostCardSkeleton key={index} />)
-              : posts
+              : displayedPosts
                   .slice(0, 5)
                   .map((post, index) => <FeaturedPostCard key={index} post={post} />)}
           </div>
@@ -95,11 +109,11 @@ export default function BlogFeed() {
               Latest Posts
             </h2>
             <div className="flex flex-col gap-4">
-              {latestPosts.length === 0
+              {latestLoading
                 ? Array(5)
                     .fill(0)
                     .map((_, index) => <LatestPostCardSkeleton key={index} />)
-                : latestPosts
+                : displayedLatest
                     .slice(0, 5)
                     .map((post, index) => <LatestPostCard key={index} post={post} />)}
             </div>
