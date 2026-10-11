@@ -26,6 +26,14 @@ TerraWise is a simple MERN travel blog website ✈ This project is aimed to help
 - AWS EKS (Kubernetes)
 - Helm (Monitoring using grafana and prometheus)
 
+## Run locally with Docker Compose
+Copy the safe environment templates before starting the containers:
+```bash
+cp backend/.env.docker.example backend/.env.docker
+cp frontend/.env.docker.example frontend/.env.docker
+```
+Set a private `JWT_SECRET` in `backend/.env.docker`, then run `docker compose up --build`.
+
 ### How pipeline will look after deployment:
 - <b>CI pipeline to build and push</b>
 ![image](https://github.com/user-attachments/assets/20542d8b-0701-43ed-b2f8-82f8ed28d053)

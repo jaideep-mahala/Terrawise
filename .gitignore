@@ -2,9 +2,30 @@
 *.tfstate
 *.tfstate.backup
 *.tfstate.*
+*.tfplan
 node_modules/
-*.env
+
+# Local environment files; keep safe templates in Git.
 .env
+.env.*
+*.env
+!.env.example
+!.env.sample
+!.env.docker.example
+
+# Build, test, and runtime output.
+dist/
+dist-ssr/
+coverage/
+*.log
+npm-debug.log*
+
+# Local diagnostics and captured service output.
+/imgcheck.txt
+/p8080.html
+/p8080api.json
+/ports.txt
+
 __pycache__/
 *.pyc
 .DS_Store
