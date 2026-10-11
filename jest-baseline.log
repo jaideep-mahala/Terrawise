@@ -1256,7 +1256,7 @@ FAIL src/__tests__/integration/home.test.tsx (7.117 s)
           [33mclass[39m=[32m"w-full cursor-default bg-light dark:bg-dark"[39m
         [36m>[39m
           [36m<div[39m
-            [33mclass[39m=[32m"relative -mt-2 h-[460px] bg-[url('./assets/wanderlustbg.webp')] bg-cover bg-fixed bg-center"[39m
+            [33mclass[39m=[32m"relative -mt-2 h-[460px] bg-[url('./assets/terrawisebg.webp')] bg-cover bg-fixed bg-center"[39m
           [36m>[39m
             [36m<div[39m
               [33mclass[39m=[32m"absolute inset-0 bg-black opacity-50"[39m
@@ -1270,7 +1270,7 @@ FAIL src/__tests__/integration/home.test.tsx (7.117 s)
                 [36m<div[39m
                   [33mclass[39m=[32m"flex cursor-text items-center justify-between text-2xl font-semibold"[39m
                 [36m>[39m
-                  [0mWanderLust[0m
+                  [0mTerraWise[0m
                 [36m</div>[39m
                 [36m<div[39m
                   [33mclass[39m=[32m"flex justify-between px-2"[39m
@@ -1423,7 +1423,7 @@ FAIL src/__tests__/integration/home.test.tsx (7.117 s)
           [33mclass[39m=[32m"w-full cursor-default bg-light dark:bg-dark"[39m
         [36m>[39m
           [36m<div[39m
-            [33mclass[39m=[32m"relative -mt-2 h-[460px] bg-[url('./assets/wanderlustbg.webp')] bg-cover bg-fixed bg-center"[39m
+            [33mclass[39m=[32m"relative -mt-2 h-[460px] bg-[url('./assets/terrawisebg.webp')] bg-cover bg-fixed bg-center"[39m
           [36m>[39m
             [36m<div[39m
               [33mclass[39m=[32m"absolute inset-0 bg-black opacity-50"[39m
@@ -1437,7 +1437,7 @@ FAIL src/__tests__/integration/home.test.tsx (7.117 s)
                 [36m<div[39m
                   [33mclass[39m=[32m"flex cursor-text items-center justify-between text-2xl font-semibold"[39m
                 [36m>[39m
-                  [0mWanderLust[0m
+                  [0mTerraWise[0m
                 [36m</div>[39m
                 [36m<div[39m
                   [33mclass[39m=[32m"flex justify-between px-2"[39m
@@ -1588,7 +1588,7 @@ FAIL src/__tests__/integration/home.test.tsx (7.117 s)
           [33mclass[39m=[32m"w-full cursor-default bg-light dark:bg-dark"[39m
         [36m>[39m
           [36m<div[39m
-            [33mclass[39m=[32m"relative -mt-2 h-[460px] bg-[url('./assets/wanderlustbg.webp')] bg-cover bg-fixed bg-center"[39m
+            [33mclass[39m=[32m"relative -mt-2 h-[460px] bg-[url('./assets/terrawisebg.webp')] bg-cover bg-fixed bg-center"[39m
           [36m>[39m
             [36m<div[39m
               [33mclass[39m=[32m"absolute inset-0 bg-black opacity-50"[39m
@@ -1602,7 +1602,7 @@ FAIL src/__tests__/integration/home.test.tsx (7.117 s)
                 [36m<div[39m
                   [33mclass[39m=[32m"flex cursor-text items-center justify-between text-2xl font-semibold"[39m
                 [36m>[39m
-                  [0mWanderLust[0m
+                  [0mTerraWise[0m
                 [36m</div>[39m
                 [36m<div[39m
                   [33mclass[39m=[32m"flex justify-between px-2"[39m
@@ -1753,7 +1753,7 @@ FAIL src/__tests__/integration/home.test.tsx (7.117 s)
           [33mclass[39m=[32m"w-full cursor-default bg-light dark:bg-dark"[39m
         [36m>[39m
           [36m<div[39m
-            [33mclass[39m=[32m"relative -mt-2 h-[460px] bg-[url('./assets/wanderlustbg.webp')] bg-cover bg-fixed bg-center"[39m
+            [33mclass[39m=[32m"relative -mt-2 h-[460px] bg-[url('./assets/terrawisebg.webp')] bg-cover bg-fixed bg-center"[39m
           [36m>[39m
             [36m<div[39m
               [33mclass[39m=[32m"absolute inset-0 bg-black opacity-50"[39m
@@ -1767,7 +1767,7 @@ FAIL src/__tests__/integration/home.test.tsx (7.117 s)
                 [36m<div[39m
                   [33mclass[39m=[32m"flex cursor-text items-center justify-between text-2xl font-semibold"[39m
                 [36m>[39m
-                  [0mWanderLust[0m
+                  [0mTerraWise[0m
                 [36m</div>[39m
                 [36m<div[39m
                   [33mclass[39m=[32m"flex justify-between px-2"[39m
@@ -1918,7 +1918,7 @@ FAIL src/__tests__/integration/home.test.tsx (7.117 s)
           [33mclass[39m=[32m"w-full cursor-default bg-light dark:bg-dark"[39m
         [36m>[39m
           [36m<div[39m
-            [33mclass[39m=[32m"relative -mt-2 h-[460px] bg-[url('./assets/wanderlustbg.webp')] bg-cover bg-fixed bg-center"[39m
+            [33mclass[39m=[32m"relative -mt-2 h-[460px] bg-[url('./assets/terrawisebg.webp')] bg-cover bg-fixed bg-center"[39m
           [36m>[39m
             [36m<div[39m
               [33mclass[39m=[32m"absolute inset-0 bg-black opacity-50"[39m
@@ -1932,7 +1932,7 @@ FAIL src/__tests__/integration/home.test.tsx (7.117 s)
                 [36m<div[39m
                   [33mclass[39m=[32m"flex cursor-text items-center justify-between text-2xl font-semibold"[39m
                 [36m>[39m
-                  [0mWanderLust[0m
+                  [0mTerraWise[0m
                 [36m</div>[39m
                 [36m<div[39m
                   [33mclass[39m=[32m"flex justify-between px-2"[39m

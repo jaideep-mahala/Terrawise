@@ -27,7 +27,7 @@ describe('Integration Test: Home Route', () => {
     //ACT
 
     //ASSERT
-    expect(screen.getByText(/WanderLust/)).toBeInTheDocument();
+    expect(screen.getByText(/TerraWise/)).toBeInTheDocument();
     expect(
       screen.getByRole('button', {
         name: /Create post/i,

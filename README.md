@@ -1,16 +1,16 @@
-# Wanderlust - Your Ultimate Travel Blog 🌍✈️
+# TerraWise - Your Ultimate Travel Blog 🌍✈️
 
-WanderLust is a simple MERN travel blog website ✈ This project is aimed to help people to contribute in open source, upskill in react and also master git.
+TerraWise is a simple MERN travel blog website ✈ This project is aimed to help people to contribute in open source, upskill in react and also master git.
 
-![Preview Image](https://github.com/krishnaacharyaa/wanderlust/assets/116620586/17ba9da6-225f-481d-87c0-5d5a010a9538)
+![Preview Image](https://github.com/krishnaacharyaa/terrawise/assets/116620586/17ba9da6-225f-481d-87c0-5d5a010a9538)
 #
 
-# Wanderlust Mega Project End to End Implementation
+# TerraWise Mega Project End to End Implementation
 
 ### In this demo, we will see how to deploy an end to end three tier MERN stack application on EKS cluster.
 #
 ### <mark>Project Deployment Flow:</mark>
-<img src="https://github.com/DevMadhup/Wanderlust-Mega-Project/blob/main/Assets/DevSecOps%2BGitOps.gif" />
+<img src="https://github.com/DevMadhup/TerraWise-Mega-Project/blob/main/Assets/DevSecOps%2BGitOps.gif" />
 
 #
 
@@ -122,7 +122,7 @@ sudo apt-get install jenkins -y
   
   - <b>Create EKS Cluster (Master machine)</b>
   ```bash
-  eksctl create cluster --name=wanderlust \
+  eksctl create cluster --name=terrawise \
                       --region=us-east-2 \
                       --version=1.30 \
                       --without-nodegroup
@@ -131,14 +131,14 @@ sudo apt-get install jenkins -y
   ```bash
   eksctl utils associate-iam-oidc-provider \
     --region us-east-2 \
-    --cluster wanderlust \
+    --cluster terrawise \
     --approve
   ```
   - <b>Create Nodegroup (Master machine)</b>
   ```bash
-  eksctl create nodegroup --cluster=wanderlust \
+  eksctl create nodegroup --cluster=terrawise \
                        --region=us-east-2 \
-                       --name=wanderlust \
+                       --name=terrawise \
                        --node-type=t2.large \
                        --nodes=2 \
                        --nodes-min=2 \
@@ -345,11 +345,11 @@ sudo apt-get install trivy -y
 - <b>Navigate to <mark> Manage Jenkins --> credentials</mark> and add credentials for docker login to push docker image:</b>
 ![image](https://github.com/user-attachments/assets/1a8287fc-b205-4156-8342-3f660f15e8fa)
 #
-- <b>Create a <mark>Wanderlust-CI</mark> pipeline</b>
+- <b>Create a <mark>TerraWise-CI</mark> pipeline</b>
 ![image](https://github.com/user-attachments/assets/55c7b611-3c20-445f-a49c-7d779894e232)
 
 #
-- <b>Create one more pipeline <mark>Wanderlust-CD</mark></b>
+- <b>Create one more pipeline <mark>TerraWise-CD</mark></b>
 ![image](https://github.com/user-attachments/assets/23f84a93-901b-45e3-b4e8-a12cbed13986)
 ![image](https://github.com/user-attachments/assets/ac79f7e6-c02c-4431-bb3b-5c7489a93a63)
 ![image](https://github.com/user-attachments/assets/46a5937f-e06e-4265-ac0f-42543576a5cd)
@@ -382,10 +382,10 @@ chmod 777 /var/run/docker.sock
   ![image](https://github.com/user-attachments/assets/4cab99aa-cef3-45f6-9150-05004c2f09f8)
   - <b>Add your cluster to argocd</b>
   ```bash
-  argocd cluster add Wanderlust@wanderlust.us-west-1.eksctl.io --name wanderlust-eks-cluster
+  argocd cluster add TerraWise@terrawise.us-west-1.eksctl.io --name terrawise-eks-cluster
   ```
   > [!Tip]
-  > Wanderlust@wanderlust.us-west-1.eksctl.io --> This should be your EKS Cluster Name.
+  > TerraWise@terrawise.us-west-1.eksctl.io --> This should be your EKS Cluster Name.
 
   ![image](https://github.com/user-attachments/assets/0f36aafd-bab9-4ef8-ba5d-3eb56d850604)
   - <b> Once your cluster is added to argocd, go to argocd console <mark>Settings --> Clusters</mark> and verify it</b>
@@ -522,6 +522,6 @@ kubectl get secret --namespace prometheus stable-grafana -o jsonpath="{.data.adm
 ## Clean Up
 - <b id="Clean">Delete eks cluster</b>
 ```bash
-eksctl delete cluster --name=wanderlust --region=us-west-1
+eksctl delete cluster --name=terrawise --region=us-west-1
 ```
 #

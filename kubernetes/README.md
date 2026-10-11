@@ -1,10 +1,10 @@
-# Wanderlust Deployment on Kubernetes
+# TerraWise Deployment on Kubernetes
 
-### In this project, we will learn about how to deploy wanderlust application on Kubernetes.
+### In this project, we will learn about how to deploy terrawise application on Kubernetes.
 
 ### Pre-requisites to implement this project:
 -  Create 2 AWS EC2 instance (Ubuntu) with instance type t2.medium and root volume 29GB.
--  Setup <a href="https://github.com/DevMadhup/wanderlust/blob/devops/kubernetes/kubeadm.md"><u> Kubeadm </a></u>
+-  Setup <a href="https://github.com/DevMadhup/terrawise/blob/devops/kubernetes/kubeadm.md"><u> Kubeadm </a></u>
 
 #
 ## Steps for Kubernetes deployment:
@@ -17,7 +17,7 @@ sudo su
 #
 2) Clone code from remote repository (GitHub) :
 ```bash
-git clone -b devops https://github.com/DevMadhup/wanderlust.git
+git clone -b devops https://github.com/DevMadhup/terrawise.git
 ```
 
 #
@@ -25,21 +25,20 @@ git clone -b devops https://github.com/DevMadhup/wanderlust.git
 ```bash
 kubectl get nodes
 ```
-![Alt text](https://github.com/DevMadhup/wanderlust/blob/devops/kubernetes/assets/nodes.png)
+![Alt text](https://github.com/DevMadhup/terrawise/blob/devops/kubernetes/assets/nodes.png)
 
 #
 4) Create kubernetes namespace :
 ```bash
-kubectl create namespace wanderlust
+kubectl create namespace terrawise
 ```
-![Namespace](https://github.com/DevMadhup/wanderlust/blob/devops/kubernetes/assets/namespace%20create.png)
+![Namespace](https://github.com/DevMadhup/terrawise/blob/devops/kubernetes/assets/namespace%20create.png)
 
 #
 5) Update kubernetes config context : 
 ```bash
-kubectl config set-context --current --namespace wanderlust
+kubectl config set-context --current --namespace terrawise
 ```
-![Update context](https://github.com/DevMadhup/wanderlust/blob/devops/kubernetes/assets/context%20wanderlust.png)
 
 #
 6) Enable DNS resolution on kubernetes cluster :
@@ -49,7 +48,7 @@ kubectl config set-context --current --namespace wanderlust
 ```bash
 kubectl get pods -n kube-system -o wide | grep -i core
 ```
-![Alt text](https://github.com/DevMadhup/wanderlust/blob/devops/kubernetes/assets/get-coredns.png)
+![Alt text](https://github.com/DevMadhup/terrawise/blob/devops/kubernetes/assets/get-coredns.png)
 
 - Above step will run coredns pod on worker node as well for DNS resolution
 
@@ -58,7 +57,7 @@ kubectl edit deploy coredns -n kube-system -o yaml
 ```
 <i> Make replica count from 2 to 4 </i>
 
-![replica 4](https://github.com/DevMadhup/wanderlust/blob/devops/kubernetes/assets/edit-coredns.png)
+![replica 4](https://github.com/DevMadhup/terrawise/blob/devops/kubernetes/assets/edit-coredns.png)
 
 #
 7) Navigate to frontend directory :
@@ -71,14 +70,14 @@ cd frontend
 ```bash
 vi .env.docker
 ```
-![IP](https://github.com/DevMadhup/wanderlust/blob/devops/kubernetes/assets/frontend.env.docker.png)
+![IP](https://github.com/DevMadhup/terrawise/blob/devops/kubernetes/assets/frontend.env.docker.png)
 
 #
 9) Build frontend docker image : 
 ```bash
-docker build -t madhupdevops/frontend-wanderlust:v2.1.8 .
+docker build -t madhupdevops/frontend-terrawise:v2.1.8 .
 ```
-![Dockerfile frontend](https://github.com/DevMadhup/wanderlust/blob/devops/kubernetes/assets/docker%20frontend%20build.png)
+![Dockerfile frontend](https://github.com/DevMadhup/terrawise/blob/devops/kubernetes/assets/docker%20frontend%20build.png)
 
 #
 10) Navigate to backend directory :
@@ -95,32 +94,32 @@ cd ../backend/
 
 > Note: To get service names, check <u>mongodb.yaml, redis.yaml</u>
 
-![Backend env file](https://github.com/DevMadhup/wanderlust/blob/devops/kubernetes/assets/backend.env.docker.png)
+![Backend env file](https://github.com/DevMadhup/terrawise/blob/devops/kubernetes/assets/backend.env.docker.png)
 
 #
 12) Build backend docker image : 
 ```bash
-docker build -t madhupdevops/backend-wanderlust:v2.1.8 .
+docker build -t madhupdevops/backend-terrawise:v2.1.8 .
 ```
-![Backend dockerfile](https://github.com/DevMadhup/wanderlust/blob/devops/kubernetes/assets/docker%20backend%20build.png)
+![Backend dockerfile](https://github.com/DevMadhup/terrawise/blob/devops/kubernetes/assets/docker%20backend%20build.png)
 
 #
 13) Check docker images:
 ```bash
 docker images
 ```
-![docker images](https://github.com/DevMadhup/wanderlust/blob/devops/kubernetes/assets/docker%20images.png)
+![docker images](https://github.com/DevMadhup/terrawise/blob/devops/kubernetes/assets/docker%20images.png)
 
 #
 14) Login to DockerHub and push image to DockerHub
 ```bash
 docker login
 ```
-![docker login](https://github.com/DevMadhup/wanderlust/blob/devops/kubernetes/assets/docker%20login.png)
+![docker login](https://github.com/DevMadhup/terrawise/blob/devops/kubernetes/assets/docker%20login.png)
 
 ```bash
-docker push madhupdevops/frontend-wanderlust:v2.1.8
-docker push madhupdevops/backend-wanderlust:v2.1.8
+docker push madhupdevops/frontend-terrawise:v2.1.8
+docker push madhupdevops/backend-terrawise:v2.1.8
 ```
 
 #
@@ -136,45 +135,45 @@ cd ../kubernetes
     ```bash
     kubectl apply -f persistentVolume.yaml 
     ```
-    ![Peristent volume](https://github.com/DevMadhup/wanderlust/blob/devops/kubernetes/assets/pv.png)
+    ![Peristent volume](https://github.com/DevMadhup/terrawise/blob/devops/kubernetes/assets/pv.png)
 
     - Create persistent volume Claim :
     ```bash
     kubectl apply -f persistentVolumeClaim.yaml 
     ```
-    ![Peristent volume Claim](https://github.com/DevMadhup/wanderlust/blob/devops/kubernetes/assets/pvc.png)
+    ![Peristent volume Claim](https://github.com/DevMadhup/terrawise/blob/devops/kubernetes/assets/pvc.png)
 
     - Create MongoDB deployment and service :
     ```bash
     kubectl apply -f mongodb.yaml 
     ```
-    ![MongoDb](https://github.com/DevMadhup/wanderlust/blob/devops/kubernetes/assets/mongo.png)
+    ![MongoDb](https://github.com/DevMadhup/terrawise/blob/devops/kubernetes/assets/mongo.png)
 
     - Create Redis deployment and service :
     > Note: Wait for 3-4 mins to get mongodb, redis pods and service should be up, otherwise backend-service will not connect.
     ```bash
     kubectl apply -f redis.yaml 
     ```
-    ![Redis](https://github.com/DevMadhup/wanderlust/blob/devops/kubernetes/assets/redis.png)
+    ![Redis](https://github.com/DevMadhup/terrawise/blob/devops/kubernetes/assets/redis.png)
 
     - Create Backend deployment and service :
     ```bash
     kubectl apply -f backend.yaml 
     ```
-    ![Backend](https://github.com/DevMadhup/wanderlust/blob/devops/kubernetes/assets/backend.png)
+    ![Backend](https://github.com/DevMadhup/terrawise/blob/devops/kubernetes/assets/backend.png)
 
     - Create Frontend deployment and service :
     ```bash
     kubectl apply -f frontend.yaml
     ```
-    ![Frontend](https://github.com/DevMadhup/wanderlust/blob/devops/kubernetes/assets/frontend.png)
+    ![Frontend](https://github.com/DevMadhup/terrawise/blob/devops/kubernetes/assets/frontend.png)
 
 #
 17)  Check all deployments and services :
 ```bash 
 kubectl get all
 ```
-![all deployments and services](https://github.com/DevMadhup/wanderlust/blob/devops/kubernetes/assets/all-deps.png)
+![all deployments and services](https://github.com/DevMadhup/terrawise/blob/devops/kubernetes/assets/all-deps.png)
 
 18) Check logs for all the pods :
 > Note: This is mandatory to ensure all pods and services are connected or not, if not then recreate deployments
@@ -186,7 +185,7 @@ kubectl logs <pod-name>
 ```bash
 http://<your-workernode-publicip>:31000/
 ```
-![App](https://github.com/DevMadhup/wanderlust/blob/devops/kubernetes/assets/app.png)
+![App](https://github.com/DevMadhup/terrawise/blob/devops/kubernetes/assets/app.png)
 
 #
 

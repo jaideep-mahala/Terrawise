@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import fallbackImage from '@/assets/wanderlustbg.webp';
+import fallbackImage from '@/assets/terrawisebg.webp';
 
 interface PostImageProps {
   src?: string;

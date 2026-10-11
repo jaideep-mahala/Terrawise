@@ -36,7 +36,7 @@ function signin() {
       <div className="mb-4 flex justify-center">
         <div className="flex w-full items-center justify-center">
           <h2 className="w-3/4 text-center text-lg font-bold text-black sm:text-xl">
-            Sign up to WanderLust
+            Sign up to TerraWise
           </h2>
         </div>
       </div>

@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: redis-deployment
-  namespace: wanderlust
+  namespace: terrawise
   labels:
     app: redis
 spec:
@@ -33,7 +33,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: redis-service
-  namespace: wanderlust
+  namespace: terrawise
 spec:
   selector:
     app: redis

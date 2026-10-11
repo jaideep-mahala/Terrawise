@@ -13,7 +13,7 @@ import Post from '@/types/post-type';
 export const sampleTours: Post[] = [
   {
     _id: 'sample-tour-1',
-    authorName: 'WanderLust Team',
+    authorName: 'TerraWise Team',
     title: 'Alpine Lakes and Mountain Trails',
     imageLink: 'https://i.ibb.co/3z72vmc/clean-lake-mountains-range-trees-nature-4k.webp',
     timeOfPost: '2024-05-18T09:00:00.000Z',
@@ -23,7 +23,7 @@ export const sampleTours: Post[] = [
   },
   {
     _id: 'sample-tour-2',
-    authorName: 'WanderLust Team',
+    authorName: 'TerraWise Team',
     title: 'City Lights: A Night Walk Downtown',
     imageLink: 'https://i.ibb.co/y8vQnDc/c4fedab1-4041-4db5-9245-97439472cf2c.webp',
     timeOfPost: '2024-05-12T18:30:00.000Z',
@@ -33,7 +33,7 @@ export const sampleTours: Post[] = [
   },
   {
     _id: 'sample-tour-3',
-    authorName: 'WanderLust Team',
+    authorName: 'TerraWise Team',
     title: 'London Skyline: Icons of the Thames',
     imageLink: 'https://i.ibb.co/BNjv5Nn/London-Skyline-125508655.webp',
     timeOfPost: '2024-05-05T11:00:00.000Z',
@@ -43,7 +43,7 @@ export const sampleTours: Post[] = [
   },
   {
     _id: 'sample-tour-4',
-    authorName: 'WanderLust Team',
+    authorName: 'TerraWise Team',
     title: 'Into the Wild: A Forest Retreat',
     imageLink: 'https://i.ibb.co/d0g42nr/FPO-BOR-100-800x600.webp',
     timeOfPost: '2024-04-27T07:45:00.000Z',
@@ -53,7 +53,7 @@ export const sampleTours: Post[] = [
   },
   {
     _id: 'sample-tour-5',
-    authorName: 'WanderLust Team',
+    authorName: 'TerraWise Team',
     title: 'Golden Hour at the Pier',
     imageLink: 'https://i.ibb.co/52mk2Yq/sunset-pier.webp',
     timeOfPost: '2024-04-19T17:15:00.000Z',
@@ -63,7 +63,7 @@ export const sampleTours: Post[] = [
   },
   {
     _id: 'sample-tour-6',
-    authorName: 'WanderLust Team',
+    authorName: 'TerraWise Team',
     title: 'Maldives: A Turquoise Paradise',
     imageLink: 'https://i.ibb.co/KLwfZzG/Maldives-1024x767.webp',
     timeOfPost: '2024-04-11T10:00:00.000Z',
@@ -73,7 +73,7 @@ export const sampleTours: Post[] = [
   },
   {
     _id: 'sample-tour-7',
-    authorName: 'WanderLust Team',
+    authorName: 'TerraWise Team',
     title: 'Sunset Horizons Coastal Drive',
     imageLink: 'https://i.ibb.co/qxFMj1H/sunset-horizon-clean-sky-nature.webp',
     timeOfPost: '2024-04-03T16:40:00.000Z',
